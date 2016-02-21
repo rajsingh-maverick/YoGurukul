@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/Content/css/notebook_bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/animate_notebook.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/Content/css/font.css" type="text/css">
+    <link rel="stylesheet" href="/Content/css/bootstrap_calendar.css" type="text/css">
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Content/css/jquery-jvectormap-1.2.2.css" type="text/css">
+    <link rel="stylesheet" href="/Content/css/app.css" type="text/css">
+    <link rel="stylesheet" href="/Content/css/custom.css" type="text/css">
+    <script>
+
+        window.onload = function () {
+            $("#divSessionDetails").hide();
+            $("#divSessionList").show();
+            $("#divgurulist").hide();
+            $("#btnStart").hide();
+        };
+
+        function BookSession(userId) {
+            var sessionId = $("#spnId").text();
+            var parameter = { sessionId: sessionId, userId: userId };
+            $.ajax({
+                url: '@Url.Action("AssignSession", "Account")',
+                data: parameter,
+                type: 'POST',
+                async: true,
+                cache: false,
+                success: function (data, status, xhr) {
+                    if (status == "success") {
+                        window.location.href = "/Admin/Index";
+                    }
+                    else {
+                        //window.location.href = "/Account/Home"
+                    }
+                }
+            });
+        }
+
+        function ViewProfile(guruId) {
+            window.open("/Admin/ViewGuruProfile/" + guruId);
+        }
+
+        function ShowSessionDetails(id, topic, date, name, startTime, EndTime, Status) {
+            $("#spnId").text(id);
+            $("#spnTopic").text(topic);
+            $("#spnDate").text(date);
+            $("#spnName").text(name);
+            $("#spnTimeSlot").text(startTime + "-" + EndTime);
+            $("#spnStatus").text(Status);
+
+
+            if ($("#spnStatus").text() != "Requested")
+                $("#btnSessionDetailAssign").hide();
+            else
+                $("#btnSessionDetailAssign").show();
+
+            if ($("#spnStatus").text() == "Scheduled") {
+                $("#divgurulist").hide();
+                $("#btnStart").show();
+                $("#btnAccept").hide();
+                $("#btnReject").hide();
+            }
+            else {
+                $("#divgurulist").hide();
+                $("#btnStart").hide();
+                $("#btnAccept").show();
+                $("#btnReject").show();
+            }
+        }
+
+        function ShowGuruList() {
+            $("#divgurulist").show();
+            $("#btnSessionDetailAssign").hide();
+        }
+
+        function ScheduleSession() {
+            var sessionId = $("#spnId").text();
+            var parameter = { sessionId: sessionId };
+            $.ajax({
+                url: '@Url.Action("ScheduleSession", "Account")',
+                data: parameter,
+                type: 'POST',
+                async: true,
+                cache: false,
+                success: function (data, status, xhr) {
+                    if (status == "success") {
+                        window.location.href = "/Account/Dashboard";
+
+                    }
+                    else {
+                        //window.location.href = "/Account/Home"
+                    }
+                }
+            });
+        }
+
+        function CancelSession() {
+            $("#btnAccept").hide();
+            $("#btnReject").hide();
+        }
+
+    </script>
+</head>
+<body>
+    <section class="vbox">
+        <section>
+            <section class="hbox stretch">
+                <!-- .aside -->
+                <aside class="bg-light lter b-r aside-md hidden-print hidden-xs yg-aside-main" id="nav">
+                    <section class="vbox">
+                        <header class="header bg-primary lter text-center clearfix">
+                            <div class="btn-group yg-logo">
+                                <span class="yg-yogurukul-icon navbar-brand"><i class="fa fa-cny icon"></i></span>
+                                <div class="btn-group hidden-nav-xs">
+                                    <a class="navbar-brand" data-toggle="fullscreen" href="dashboard.html">YoGurukul</a>
+                                </div>
+                            </div>
+                        </header>
+                        <section class="w-f scrollable">
+                            <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="5px" data-color="#333333">
+
+                                <!-- nav -->
+                                <nav class="nav-primary hidden-xs yg-nav-primary">
+                                    <ul class="nav yg-aside-nav">
+
+                                        <li>
+                                            <a href="dashboard.html">
+                                                <i class="fa fa-dashboard"></i>
+                                                <span>Dashboard</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#layout">
+                                                <i class="fa fa-columns"></i>
+                                                <span class="pull-right">
+                                                    <i class="fa fa-angle-down text"></i>
+                                                    <i class="fa fa-angle-up text-active"></i>
+                                                </span>
+                                                <span>My Sessions</span>
+                                            </a>
+                                            <ul class="nav lt yg-sub-group">
+                                                @*<li>
+                                                        <a href="calendar.html">
+                                                            <i class="fa fa-angle-right"></i>
+                                                            <span>Calendar View</span>
+                                                        </a>
+                                                    </li>*@
+                                                <li>
+                                                    <a href="upcoming-session.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Upcoming Sessions</span>
+                                                    </a>
+                                                </li>
+                                                @*<li>
+                                                        <a href="past-session.html">
+                                                            <i class="fa fa-angle-right"></i>
+                                                            <span>Past Sessions</span>
+                                                        </a>
+                                                    </li>*@
+                                            </ul>
+                                        </li>
+
+                                        @*<li>
+                                                    <a href="#uikit">
+                                                        <i class="fa fa-users"></i>
+                                                        <span class="pull-right">
+                                                            <i class="fa fa-angle-down text"></i>
+                                                            <i class="fa fa-angle-up text-active"></i>
+                                                        </span>
+                                                        <span>Guru</span>
+                                                    </a>
+                                                    <ul class="nav lt yg-sub-group">
+                                                        <li>
+                                                            <a href="myguru.html">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <span>My Guru</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="recently-viewed.html">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <span>Recently Viewed</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="similar-views.html">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <span>Similar Views</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+                                                <li>
+                                                    <a href="find-guru.html">
+
+                                                        <i class="fa fa-share icon"></i>
+                                                        <span>Find Guru</span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="myfiles.html">
+                                                        <i class="fa fa-copy"></i>
+                                                        <span>My Files</span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="messages.html">
+                                                        <i class="fa fa-envelope-o"></i>
+                                                        <span>My Messages</span>
+                                                    </a>
+                                                </li>
+
+                                            <li>
+                                                <a href="notebook.html">
+                                                    <i class="fa fa-user"></i>
+                                                    <span class="pull-right">
+                                                        <i class="fa fa-angle-down text"></i>
+                                                        <i class="fa fa-angle-up text-active"></i>
+                                                    </span>
+                                                    <span>My Account</span>
+                                                </a>
+                                                <ul class="nav lt yg-sub-group">
+                                                    <li>
+                                                        <a href="myprofile.html">
+                                                            <i class="fa fa-angle-right"></i>
+                                                            <span>My Profile</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="orderhistory.html">
+                                                            <i class="fa fa-angle-right"></i>
+                                                            <span>My Order History</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="testimonials.html">
+                                                            <i class="fa fa-angle-right"></i>
+                                                            <span>My Testimonials</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <a href="faq.html">
+                                                    <i class="fa fa-comments-o"></i>
+                                                    <span>FAQ's</span>
+                                                </a>
+                                            </li>*@
+
+                                        <li>
+                                            <a href="#notebook1">
+                                                <i class="fa fa-cogs"></i>
+                                                <span class="pull-right">
+                                                    <i class="fa fa-angle-down text"></i>
+                                                    <i class="fa fa-angle-up text-active"></i>
+                                                </span>
+                                                <span>Settings</span>
+                                            </a>
+                                            <ul class="nav lt yg-sub-group">
+                                                <li>
+                                                    <a href="buttons.html">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Audio/Video Settings</span>
+                                                    </a>
+                                                </li>
+                                                @*<li>
+                                                        <a href="buttons.html">
+                                                            <i class="fa fa-angle-right"></i>
+                                                            <span>Notification Settings</span>
+                                                        </a>
+                                                    </li>*@
+
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <a href="@Url.Action("Logout","Account")">
+                                                <i class=" fa fa-power-off">
+                                                </i>
+                                                <span>Logout</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                                <!-- / nav -->
+                            </div>
+                        </section>
+                    </section>
+                </aside>
+                <!-- /.aside -->
+                <section id="content">
+                    <section class="vbox">
+                        <section class="scrollable">
+
+                            <header class="bg-dark dk header navbar navbar-fixed-top-xs">
+                                <a class="pull-left btn btn-sm btn-light btn-icon active yg-toggle-btn" data-toggle="class:nav-xs" href="#nav">
+                                    <i class="fa fa-indent text"></i>
+                                    <i class="fa fa-dedent text-active"></i>
+                                </a>
+
+                                @*<ul class="nav navbar-nav navbar-left m-n hidden-xs nav-user">
+                                        <li class="hidden-xs">
+                                            <a data-toggle="dropdown" class="dropdown-toggle dk" href="#">
+                                                <i class="fa fa-envelope"></i>
+                                                <span class="badge badge-sm up bg-danger m-l-n-sm count" style="display: inline-block;">13</span>
+                                            </a>
+                                            <section class="dropdown-menu aside-xl">
+                                                <section class="panel bg-white">
+                                                    <header class="panel-heading b-light bg-light">
+                                                        <strong>You have <span class="count" style="display: inline;">3</span> messages</strong>
+                                                    </header>
+                                                    <div class="list-group list-group-alt animated fadeInRight">
+                                                        <a class="media list-group-item" href="#" style="display: block;"><span class="pull-left thumb-sm text-center"><i class="fa fa-envelope-o fa-2x text-success"></i></span><span class="media-body block m-b-none">Sophi sent you a email<br><small class="text-muted">1 minutes ago</small></span></a>
+                                                        <a style="display: block;" href="#" class="media list-group-item"><span class="pull-left thumb-sm text-center"><i class="fa fa-envelope-o fa-2x text-success"></i></span><span class="media-body block m-b-none">Sophi sent you a email<br><small class="text-muted">1 minutes ago</small></span></a>
+                                                        <a style="display: block;" href="#" class="media list-group-item"><span class="pull-left thumb-sm text-center"><i class="fa fa-envelope-o fa-2x text-success"></i></span><span class="media-body block m-b-none">Sophi sent you a email<br><small class="text-muted">1 minutes ago</small></span></a>
+                                                    </div>
+                                                    <footer class="panel-footer text-sm">
+                                                        <a class="pull-right" href="#"><i class="fa fa-cog"></i></a>
+                                                        <a data-toggle="class:show animated fadeInRight" href="#notes">See all the messages</a>
+                                                    </footer>
+                                                </section>
+                                            </section>
+                                        </li>
+
+                                        <li class="hidden-xs">
+                                            <a data-toggle="dropdown" class="dropdown-toggle dk" href="#">
+                                                <i class="fa fa-bell"></i>
+                                                <span class="badge badge-sm up bg-danger m-l-n-sm count" style="display: inline-block;">3</span>
+                                            </a>
+                                            <section class="dropdown-menu aside-xl">
+                                                <section class="panel bg-white">
+                                                    <header class="panel-heading b-light bg-light">
+                                                        <strong>You have <span class="count" style="display: inline;">3</span> notifications</strong>
+                                                    </header>
+                                                    <div class="list-group list-group-alt animated fadeInRight">
+                                                        <a class="media list-group-item" href="#" style="display: block;"><span class="pull-left thumb-sm text-center"><i class="fa fa-envelope-o fa-2x text-success"></i></span><span class="media-body block m-b-none">Sophi sent you a email<br><small class="text-muted">1 minutes ago</small></span></a>
+                                                        <a class="media list-group-item" href="#">
+                                                            <span class="pull-left thumb-sm">
+                                                                <img class="img-circle" alt="John said" src="images/avatar.jpg">
+                                                            </span>
+                                                            <span class="media-body block m-b-none">
+                                                                Use awesome animate.css<br>
+                                                                <small class="text-muted">10 minutes ago</small>
+                                                            </span>
+                                                        </a>
+                                                        <a class="media list-group-item" href="#">
+                                                            <span class="media-body block m-b-none">
+                                                                1.0 initial released<br>
+                                                                <small class="text-muted">1 hour ago</small>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <footer class="panel-footer text-sm">
+                                                        <a class="pull-right" href="#"><i class="fa fa-cog"></i></a>
+                                                        <a data-toggle="class:show animated fadeInRight" href="#notes">See all the notifications</a>
+                                                    </footer>
+                                                </section>
+                                            </section>
+                                        </li>
+
+                                    </ul>*@
+
+                                <ul class="nav navbar-nav navbar-right m-n hidden-xs nav-user yg-user-d">
+                                    <li class="dropdown">
+                                        <a data-toggle="dropdown" class="dropdown-toggle " href="#">
+                                            <span class="thumb-sm avatar pull-left yg-db-thumb">
+                                                <img src="/Content/images/person4.jpg">
+                                            </span>
+                                            @Session["Name"] <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu animated fadeInRight">
+                                            <span class="arrow top"></span>
+
+                                            @*<li>
+                                                    <a href="profile.html">Profile</a>
+                                                </li>
+                                                <li>
+                                                    <a href="docs.html">Help</a>
+                                                </li>*@
+                                            <li class="divider"></li>
+                                            <li>
+                                                <a href="@Url.Action("Logout","Account")">Logout</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </header>
+                            @RenderBody()
+                        </section>
+
+                    </section>
+                    <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen, open" data-target="#nav,html"></a>
+                </section>
+                @*<aside class="bg-light lter b-l aside-md hide" id="notes">
+                        <div class="yg-db-notif"><i class="fa fa-times yg-db-notif1"></i></div>
+                        <div class="wrapper">Notification</div>
+
+                        <div class="list-group list-group-alt animated fadeInRight">
+
+                            <a class="media list-group-item" href="#" style="display: block;">
+                                <span class="pull-left thumb-sm text-center"><i class="fa fa-envelope-o fa-2x text-success"></i></span>
+                                <span class="media-body block m-b-none">Sophi sent you a email<br><small class="text-muted">1 minutes ago</small></span>
+                            </a>
+
+                            <a style="display: block;" href="#" class="media list-group-item">
+                                <span class="pull-left thumb-sm text-center"><i class="fa fa-envelope-o fa-2x text-success"></i></span>
+                                <span class="media-body block m-b-none">Sophi sent you a email<br><small class="text-muted">7 minutes ago</small></span>
+                            </a>
+
+                            <a style="display: block;" href="#" class="media list-group-item">
+                                <span class="pull-left thumb-sm text-center"><i class="fa fa-envelope-o fa-2x text-success"></i></span>
+                                <span class="media-body block m-b-none">Sophi sent you a email<br><small class="text-muted">11 minutes ago</small></span>
+                            </a>
+
+                            <a style="display: block;" href="#" class="media list-group-item">
+                                <span class="pull-left thumb-sm text-center"><i class="fa fa-envelope-o fa-2x text-success"></i></span>
+                                <span class="media-body block m-b-none">Sophi sent you a email<br><small class="text-muted">12 minutes ago</small></span>
+                            </a>
+
+                            <a style="display: block;" href="#" class="media list-group-item">
+                                <span class="pull-left thumb-sm text-center"><i class="fa fa-envelope-o fa-2x text-success"></i></span>
+                                <span class="media-body block m-b-none">Sophi sent you a email<br><small class="text-muted">14 minutes ago</small></span>
+                            </a>
+
+                            <a style="display: block;" href="#" class="media list-group-item">
+                                <span class="pull-left thumb-sm text-center"><i class="fa fa-envelope-o fa-2x text-success"></i></span>
+                                <span class="media-body block m-b-none">Sophi sent you a email<br><small class="text-muted">17 minutes ago</small></span>
+                            </a>
+
+                            <a style="display: block;" href="#" class="media list-group-item">
+                                <span class="pull-left thumb-sm text-center"><i class="fa fa-envelope-o fa-2x text-success"></i></span>
+                                <span class="media-body block m-b-none">Sophi sent you a email<br><small class="text-muted">19 minutes ago</small></span>
+                            </a>
+
+                            <a style="display: block;" href="#" class="media list-group-item">
+                                <span class="pull-left thumb-sm text-center"><i class="fa fa-envelope-o fa-2x text-success"></i></span>
+                                <span class="media-body block m-b-none">Sophi sent you a email<br><small class="text-muted">25 minutes ago</small></span>
+                            </a>
+
+                        </div>
+                    </aside>*@
+
+            </section>
+        </section>
+
+    </section>
+    <script src="~/Scripts/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="~/Scripts/notebook_bootstrap.js"></script>
+    <!-- App -->
+
+    <script src="~/Scripts/app.js"></script>
+    <script src="~/Scripts/jquery.slimscroll.min.js"></script>
+    <script src="~/Scripts/jquery.easy-pie-chart.js"></script>
+    <script src="~/Scripts/jquery.sparkline.min.js"></script>
+    <script src="~/Scripts/jquery.flot.min.js"></script>
+    <script src="~/Scripts/jquery.flot.tooltip.min.js"></script>
+    <script src="~/Scripts/jquery.flot.resize.js"></script>
+    <script src="~/Scripts/jquery.flot.grow.js"></script>
+    <script src="~/Scripts/demo.js"></script>
+    <script src="~/Scripts/bootstrap_calendar.js"></script>
+    <script src="~/Scripts/jquery.sortable.js"></script>
+    @*<script src="~/Scripts/notebook_cal_demo.js"></script>*@
+    <script src="~/Scripts/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="~/Scripts/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="~/Scripts/jvectormap_demo.js"></script>
+    <script src="~/Scripts/app.plugin.js"></script>
+    <script>
+        function CloseForm() {
+            $('#signUpModal').hide();
+        }
+
+        $('.yg-guru-testimonials').click(function () {
+            $('.yg-guru-profile-summary').hide();
+            $('.yg-guru-profile-schedule').hide();
+            $('.yg-guru-profile-testimonials').show();
+
+        });
+
+        $('.yg-guru-singleProfile').click(function () {
+            $('.yg-guru-profile-summary').show();
+            $('.yg-guru-profile-testimonials').hide();
+            $('.yg-guru-profile-schedule').hide();
+
+        });
+
+        $('.yg-guru-schedule').click(function () {
+            $('.yg-guru-profile-summary').hide();
+            $('.yg-guru-profile-testimonials').hide();
+            $('.yg-guru-profile-schedule').show();
+
+        });
+    </script>
+    @RenderSection("scripts", false)
+</body>
+
+</html>

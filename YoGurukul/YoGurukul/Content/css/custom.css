@@ -1,0 +1,1554 @@
+@CHARSET "ISO-8859-1";
+/*  Isleen Solutions custom css*/
+.btn-primary:not(.btn-link):not(.btn-flat) {
+    background-color: #009688;
+    color: rgba(255, 255, 255, 0.84);
+    border-color: #009688;
+}
+.col-md-4, .yg-benifits-div, .yg-testimonial img, .yg-login-form, .yg-gurulistFilters{
+    float: left;    
+}
+.yg-icons-footer i {
+    padding: 0 6px;
+}
+.yg-logo {
+    text-align: right;
+}
+/*Header css*/
+.yg-m {
+    margin-bottom: 0px !important;
+}
+
+.navbar-nav .active, .dropdown {
+    background: none !important;
+    
+}
+
+.yg-nav-h {
+   height: 40px ;
+   min-height: 40px;
+   border-radius: 0;
+}
+
+.yg-li-a {
+    font-weight: 600;
+    padding: 7px !important;
+    color: white !important;
+}
+
+.navbar-brand.yg-brandname {
+    height: 40px !important;
+    line-height: 40px;
+    color: white !important;
+}
+
+.yg-nav-form {
+    margin: 2px 0px !important;
+}
+
+.dropdown-toggle.yg-li-a {
+    border-color: transparent !important;
+}
+.yg-nav-search {
+  background: rgba(0, 0, 0, 0.59) none repeat scroll 0 0 !important;
+  border: none !important;
+  /*z-index: 10000 !important;*/
+  height: 30px !important;
+  min-height: 30px !important;
+  border-radius: 0px;
+  
+}
+/*#signUpModal{
+  overflow-y: hidden !important; 
+}*/
+.col-md-8{
+  float:left;
+
+}
+.yg-nav-search .navbar-collapse, .yg-nav-search .padding-lr{
+  height:27px !important;
+  min-height: 29px !important;
+}
+.yg-nav-search .navbar-collapse{
+    border-radius: 0px;
+    border: none !important;
+
+}
+.yg-nav-buttons {
+  margin: 4px 7px;
+  padding: 3px;
+  width: 122px;
+}
+.yg-nav-s {
+  border: 1px solid #f3f3f3;
+  float: right;
+  height: 26px;
+  margin: 5px;
+  padding: 0;
+  width: 70px;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  border-top-color: transparent !important;
+}
+#signInModal .modal-dialog, #signUpModal .modal-dialog {
+    width: 26%;
+}
+.yg-modal-sign .form-group{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.yg-nav-social {
+  float: left;
+  width: 100%;
+}
+.yg-pf-stu {
+  margin-top: 60px;
+}
+.dhx_cal_navline {
+    height: 59px !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 1039px !important;
+}
+.dhx_cal_data{
+    height: 361px !important;
+    left: 0 !important;
+    top: 81px !important;
+    width: 1039px !important;
+}
+.dhx_cal_header{
+    height: 20px !important;
+    left: -1px !important;
+    top: 60px !important;
+    width: 1039px !important;
+}
+.dhx_scale_bar{
+    height: 18px !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 147px !important;
+
+}
+.dhx_cal_data table{
+    width:100%;
+}
+.yg-nav-so {
+  padding: 0 40px;
+}
+.yg-nav-in input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: -moz-use-text-color -moz-use-text-color #d3d3d3;
+  border-image: none;
+  border-style: none none solid;
+  border-width: medium medium 1px;
+  padding: 2px;
+}
+.yg-nav-in {
+    padding: 0 15px;
+}
+.yg-nav-in .col-lg-12, .yg-nav-in .col-lg-6 {
+  padding: 0;
+}
+/*.yg-nav-ul{
+    margin-left: 39%;
+}*/
+/*End of header Css*/
+.banner_section .container-fluid, .banner_section .carousel,.banner_section .carousel-inner{
+    height: inherit;
+}
+.yg-about-yo.text-center {
+  float: left;
+  /*margin: 10px;*/
+  padding: 30px;
+}
+#yg-about-yo > h2 {
+  margin: 5% 0;
+}
+.yg-ab-txt {
+  margin: 14px;
+  text-align: justify;
+  word-spacing: 4px;
+}
+.yg-how-works {
+    float: left;
+    background: #f1f1f1 none repeat scroll 0 0;
+}
+.yg-how-works h2 {
+    margin: 2% 0;
+}
+.done-animation {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.hiw-item-icon {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #b3b3b3;
+    border-radius: 50%;
+    color: #b3b3b3;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    line-height: 60px;
+    text-align: center;
+    float: left;
+}
+.yg-login-button li {
+    color: #fff;
+    display: block;
+    float: left;
+    padding: 0 3px !important;
+}
+.yg-db-thumb > img {
+  width: 23px;
+}
+.yg-db-thumb {
+    border: medium none;
+    padding-left: 7px;
+}
+.yg-db-u-p{
+   padding: 0;
+}
+.search_form {
+    height: 27px;
+    padding: 2px;
+}
+.search_section {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.yg-user-d .nav .open > a {
+    background-color: #d9e8ef;
+    color: #adbece;
+}
+.yg-msg-div {
+    float: left;
+    margin-left: 40px;
+}
+.yg-msg-c {
+    float: left;
+    margin: 0;
+    padding: 15px 8px;
+    width: 100%;
+}
+.yg-m-msg {
+  float: left;
+  padding: 20px;
+}
+.yg-sec-stu {
+  margin-top: 20px;
+}
+.arrow, .arrow::after{
+    background-color: #d9e8ef !important;
+    border: none !important;
+}
+.yg-searchbtn {
+  background: #00aff0 none repeat scroll 0 0 !important;
+  border: 1px solid #00aff0 !important;
+  bottom: 2px;
+  height: 25px;
+  margin: 0;
+  padding: 1px;
+  position: relative;
+  width: 40%;
+}
+.top {
+    background: white none repeat scroll 0 0;
+    color: black;
+     margin: 0;   
+}
+.yg-top {
+    margin: 0;
+    background-color: #80CBC4;
+}
+nav {
+    background-color: #4db6ac;
+    
+}
+.yg-login-button li:nth-child(2) .btn{
+    background-color: #FF9900;
+}
+
+.yg-login-button li:nth-child(2) .btn:hover{
+    background-color: #FF9900;
+}
+.yg-login-button {
+  margin: 0;
+}
+.yg-menus {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: inherit;
+}
+.yg-menus li a{
+    color: black;
+    font-weight: 600;
+}
+.yg-slider-img img {
+    width: 100%;
+    height: 600px !important;
+}
+.yg-carousel-caption {
+    bottom: 434px;
+    float: left;
+    margin: 10px;
+    position: relative;
+    width: 32%;
+    left: 80px;
+}
+#yg-topnav {
+  border-radius: 0 !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.yg-nav-first {
+  background: rgba(0, 0, 0, 0.59) none repeat scroll 0 0;
+  z-index: 10000;
+  border: none!important;
+}
+.yg-slide-h {
+  bottom: 200px;
+  float: left;
+  left: 550px;
+  position: relative;
+}
+.yg-slide-h .btn {
+  width: 250px;
+}
+#yg-about-yo hr,#yg-how-works hr, #yg-benifits hr {
+  margin: 11px 39% !important;
+  /*border: 1px solid rgba(0,0,0,0.1);*/
+  border: none;
+}
+.yg-top-nav {
+    float: left;
+    height: 25px;
+}
+.yg-brand-logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+.yg-brand-tag{
+    font-size: 20px;
+}
+.banner_section {
+    height: 600px;  
+}
+.yg-menu-ul {
+    margin: 0;
+    
+}
+.yg-menu-ul> li {
+    float: left;
+    padding: 0 13px;
+}
+
+.yg-login-button{
+    height: 25px;
+    line-height: 10px;
+    margin: 0;
+}
+.yg-nav-menus{
+    background-color: #009688;
+}
+.yg-video {
+    float: left;
+    height: 310px !important;
+    width: 100%;
+    background: #f1f1f1 none repeat scroll 0 0;
+    text-align: center
+}
+.yg-rb-logout {
+    font-size: 15px;
+    padding-right: 14px;
+}
+.yg-toggle-btn {
+  background-color: #009688;
+  border: medium none;
+  box-shadow: none !important;
+  margin: 0px 6px;
+}
+.yg-db-first {
+  margin: 20px 0;
+}
+.yg-toggle-btn i{
+  color: #FFFFFF;    
+}
+.hiw-item-picture {
+    width: 50%;
+}
+.hiw-item {
+  text-align: center;
+}
+.yg-home-video {
+    /*float: left;
+    height: 200px;
+    width: 50%;*/
+}
+.yg-signup {
+   bottom: 375px;
+   position: relative;
+   right: 200px;
+   text-align: center;
+   width: 250px;
+   background-color: rgba(255, 255, 229, 0.48);
+}
+.yg-signup ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+.yg-signup button {
+    width: 180px;
+}
+.yg-testimonials {
+    float: left;
+    width: 100%;
+    background: #778899 none repeat scroll 0 0;
+    padding: 10px;
+}
+.yg-well {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    border: medium none !important;
+    box-shadow: none !important;
+    margin: 30px 0;
+}
+.footer_heading h5 {
+    border-bottom: 1px solid;
+    float: left;
+    text-transform: none;
+    color: white;
+    padding-bottom: 6px;
+}
+.yg-slider-buttons {
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 29px;
+    background: #778899 none repeat scroll 0 0;
+}
+.yg-slider-buttons button {
+    border-radius: 8px;
+}
+.yg-benifits-section {
+    float: left;
+    width: 100%;
+    /*background: #333333 none repeat scroll 0 0;*/
+    margin-bottom:50px;
+    padding-bottom: 25px;
+    margin-left: 0;
+}
+.yg-benifits-section li, .yg-benifits-section i{
+    color: #111;  
+}
+.yg-benifits-div{
+    padding: 15px;
+}
+.yg-benifits-div div{
+   /* border-bottom: 1px solid #4db6ac;*/
+    min-height: 100px;
+}
+.yg-li-a:hover{
+    color: #12A5F4 !important;
+}
+.yg-benifits-header {
+    color: #4db6ac !important;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.yg-benifits-div ul {
+    list-style: outside none none;
+    
+}
+.yg-benifits-div span i{
+    font-size: 60px;
+}
+.yg-benifits-div ul i {
+    font-size: 13px;
+    padding-right: 10px;
+}
+.yg-benifits-section h2 {
+    /*color: #111;*/
+    margin: 7% 0;
+    text-align: center;
+}
+.yg-benifits-learning-btn {
+    background: #778899 none repeat scroll 0 0;
+    bottom: 30px;
+    float: left;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.yg-benifits {
+    float: left;
+    margin: 25px 0;
+    width: 100%;
+}
+.yg-readmore {
+    color: #ff9900;
+    float: left;
+    text-align: center;
+    width: 60%;
+}
+.carousel.slide {
+    width: 100% !important;
+}
+.yg-testimonial img {
+    height: 195px;
+    width: 100%;
+}
+.yg-benifits-div:hover, .yg-benifits-div:focus{
+    box-shadow: 10px 10px 5px #888888;
+}
+#yg-meet-gurus > h2 {
+  color: white;
+  text-align: center;
+  margin: 3% 0;
+}
+#yg-video > h2 {
+  text-align: center;
+  margin: 3% 0;
+}
+.yg-testimonial p {
+    float: left;
+    position: relative;
+    top: 2px;
+    width: 75%;
+    color: white;
+    padding: 12px;
+}
+.yg-guru-name {
+  float: left;
+  padding: 0 10px;
+  text-transform: uppercase;
+  width: 100%;
+  margin:5px 0;
+}
+.yg-testimonial {
+    padding: 4px;
+}
+#parent_subject_id_chzn a, #subject_id_chzn a {
+    height: 25px !important;
+}
+.modal-backdrop{
+    position: absolute;
+    display: none;
+}
+.yg-modal-header {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-bottom: 1px solid #d3d3d3 !important;
+    padding: 10px !important;
+    text-align: center;
+}
+.yg-social-google {
+    background-color: #d62d20 !important;
+    border-radius: 16px;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+}
+.yg-social-facebook {
+    background-color:#3b5998 !important;
+    border-radius: 16px;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    
+}
+.yg-login-permission {
+    color: #a7a7a7;
+    float: left;
+    font-size: 10px;
+    margin: 2px;
+    text-align: center;
+    width: 100%;
+}
+.yg-login-seperation {
+    float: left;
+    width: 100%;
+}
+.yg-login-seperation-one {
+    border-color: #d62d20;
+    float: left;
+    margin-bottom: 10px;
+    
+    margin-top: 10px;
+    width: 47%;
+}
+.yg-login-seperation-two {
+    float: right;
+    width: 47%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+    border-color: #d62d20;
+}
+.yg-login-seperation > span {
+    position :relative;
+    left: 2px;
+}
+.yg-login-modalcontent{
+    width: 55%;
+    margin-left: 20%;
+}
+.yg-login-form {
+    width: 100%;
+}
+.yg-loginModal-button {
+    width: 100%;
+}
+.yg-login-form .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+.modal {
+    background: rgba(29, 29, 29, 0.92) none repeat scroll 0 0;
+}
+.modal-dialog {
+    margin: 3% auto;
+}
+.yg-social-google i, .yg-social-facebook i {
+    margin-right: 10px;
+}
+.yg-gurulistImage {
+    width: 100%;
+}
+.yg-gurulistImage img {
+    height: 250px;
+    width: 100%;
+}
+.yg-price .yg-gurulist-headers, .yg-ratings .yg-gurulist-headers, .yg-streams .yg-gurulist-headers, .yg-datetime .yg-gurulist-headers, .yg-location .yg-gurulist-headers {
+    color: #009688;
+    float: left;
+    font-size: 20px;
+    font-weight: initial;
+    margin: 10px;
+    width: 100%;
+}
+.noUi-base {
+    float: left;
+    width: 100%;
+    height: 2%;
+}
+.yg-price-div, .yg-ratings-div, .yg-streams, .yg-datetime, .yg-location, .yg-streams-div, .yg-datetime-div, .yg-location-div {
+    float: left;
+}
+.yg-price-div .btn {
+    background-color: white !important;
+    border: 1px solid #d3d3d3;
+    border-radius: 7px;
+    color: black !important;
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+.yg-price-div > p {
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+.yg-ratings-div span, .yg-streams-div span, .yg-location-div span{
+    float: left;
+    width: 100%;
+}
+.yg-ratings-div i {
+    color: grey;
+}
+.yg-streams-div > p, .yg-location-div > p{
+    color: blue;
+    float: left;
+    margin: 5px;
+    width: 100%;
+}
+.yg-datetime-div > span {
+    float: left;
+    width: 10%;
+}
+.yg-gurulistMaindiv {
+    /*background-color: #f3f3f3;*/
+    padding-left: 6%;
+    padding-right: 6%;
+    float:left;
+}
+.yg-gurulistFilters {
+    background-color: white;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 10px;
+    z-index: 1;
+}
+.yg-gurulistFilterVal {
+    background: white none repeat scroll 0 0;
+    padding: 10px;
+    border-bottom: 1px solid #d3d3d3;
+    float: left;
+    width: 100%;
+    z-index: 1;
+}
+.yg-guru-profileImage img {
+    width: 100%;
+    height: 25%;
+}
+.yg-gurus {
+    background: white none repeat scroll 0 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid #d3d3d3;
+}
+.yg-guru-profileDetails1 i {
+    color: green;
+}
+.yg-guru-reviews {
+    color: #0066FF;
+}
+.yg-guru-profileDetails2 div:nth-child(2) {
+    border-left: 1px solid #d3d3d3;    
+}
+.yg-guru-profileImage i {
+    color: #ff9900;
+}
+.yg-guru-profile{
+    background: white none repeat scroll 0 0;
+    padding: 10px;
+}
+.yg-guru-profile-summary {
+    background: white none repeat scroll 0 0;
+    border-top: 1px solid #d3d3d3;
+    float: left;
+}
+.yg-profile-contentHeader {
+    color: midnightblue;
+    float: left;
+    font-size: 17px;
+    padding: 10px;
+    width: 100%;
+}
+.yg-profile-contentHeader i {
+    padding-right: 10px;
+}
+.yg-profile-content {
+    float: left;
+    margin-left: 6%;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.yg-progress {
+    float: right;
+    height: 10px;
+    width: 75%;
+}
+.yg-guru-rating-progress p {
+    color: #0066ff;
+    float: left;
+}
+
+.yg-guru-rating-progress {
+    float: left;
+    width: 100%;
+}
+.yg-guru-profile-testimonials {
+    background: white none repeat scroll 0 0;
+    border-bottom: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+    display: none;
+}
+.yg-rating-sort {
+    border-bottom: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+    padding: 8px;
+}
+.yg-guru-reviews-list img {
+    height: 190px;
+    width: 89%;
+}
+.yg-guru-reviews-list{
+   border-bottom: 1px solid #d3d3d3;
+   padding: 10px; 
+}
+.yg-guru-reviews-list i {
+    color: green;
+}
+.yg-guru-testimonials-rating {
+    padding: 10px;
+}
+.yg-guru-singleProfile, .yg-guru-testimonials, .yg-guru-schedule {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+.yg-guru-profile-schedule {
+    background: white none repeat scroll 0 0;
+    float: left;
+    display: none;
+}
+.yg-search-all > input, .yg-search-item > input {
+   border: medium none;
+    float: right;
+    padding: 3px;
+    width: 88%;
+    height: 22px;
+}
+.yg-search-all i, .yg-search-item i {
+  background: white none repeat scroll 0 0;
+  color: #12a5f4;
+  float: left;
+  font-size: 13px;
+  left: 22px;
+  padding: 6px;
+  position: relative;
+  width: 8%;
+}
+.yg-search-all, .yg-search-item {
+    float: left;
+    
+}
+.yg-signup-student-guru > input {
+   margin-right: 3px;
+    width: 6%;
+}
+.yg-signup-student-guru {
+    text-align: center;
+}
+.yg-signup-student-guru b {
+    color: #009688;
+    padding-right: 15px;
+}
+.yg-signup-gender {
+    text-align: center;
+}
+.yg-signup-gender {
+    color: #009688;
+    text-align: center;
+}
+.yg-signup-gender > span {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.footer {
+    background: #333333 none repeat scroll 0 0;
+    color: white;
+    padding: 20px 0;
+    /*height: 200px;*/
+ }
+ .footer_div ul li p{
+    color: white;
+ }
+ .yg-copyright {
+    border-top: 1px solid;
+    padding-bottom: 10px;
+    padding-left: 10px !important;
+    padding-right: 10px;
+    padding-top: 10px;
+    float: left;
+    width: 100%;
+}
+.yg-verification-input {
+    margin-bottom: 10%;
+    margin-top: 10%;
+    text-align: center;
+}
+.yg-verification-input button {
+    font-size: 10px;
+    margin: 0;
+}
+.yg-verification-input .btn:nth-child(odd){
+    background-color: grey !important;
+}
+.yg-verify input {
+    text-align: center;
+}
+.yg-message img {
+    
+    height: 50px;
+    margin-right: 15px;
+    overflow: hidden;
+    width: 50px;
+}
+.yg-message-ul li {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+}
+.yg-message-ul {
+    float: left;
+    list-style: outside none none;
+    padding: 0;
+}
+.btn-info,.btn-info:hover{
+    background-color: #009688;
+    border-color: #009688;
+}
+.yg-guru-profileDetails2 button {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.yg-profieImage img {
+  border: 1px solid #d3d3d3;
+  float: left;
+  height: 126px !important;
+  padding: 4px;
+  width: 75%;
+}
+.yg-pf-pho {
+  bottom: 42px;
+  color: black;
+  float: left;
+  left: 5px;
+  position: relative;
+  width: 146px;
+}
+.yg-pf-pho > span {
+  color: white;
+  float: right;
+  opacity: 0;
+  padding: 0;
+  width: 92px !important;
+  word-break: break-all;
+}
+.yg-pf-pho i {
+  color: #f1f1f1;
+  float: left;
+  font-size: 24px;
+  position: relative;
+  text-align: center;
+  top: 8px;
+  width: 42px;
+}
+.yg-profieImage {
+    float: left;
+    width: 20%;
+    margin-top: 25px;
+}
+.yg-profile-Name {
+    bottom: 20px;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.yg-generalInfo td, .yg-socialInfo td{
+  border-top: medium none !important;
+  width: 100px !important;
+}
+.yg-profile-password {
+    bottom: 20px;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.yg-generalInfo {
+  float: right;
+  width: 80%;
+  margin-top: 18px;
+}
+.yg-socialInfo {
+  float: right;
+  width: 80%;
+  margin-top: 18px;
+}
+.yg-profile-firstName {
+    color: red;
+    font-size: 25px;
+}
+.yg-MyProfile {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.yg-socialInfo i {
+    width: 20px;
+}
+.yg-generalInfo > h4,.yg-generalInfo table,.yg-socialInfo > h4,.yg-socialInfo table {
+    float: left;
+    width: 100%;
+}
+.yg-aside-main {
+    background: #323232 none repeat scroll 0 0 !important;
+}
+.yg-aside-nav > li {
+    background: #323232 none repeat scroll 0 0;
+    color: white;
+}
+.yg-aside-nav > li > a > i, .yg-aside-nav > li > a{
+    color: #e1e6e8 !important;  
+    border-right: medium none !important; 
+}
+.yg-aside-nav > li > a {
+    font-size: 13px !important; 
+    font-weight: 500 !important; 
+    border-color: #5e5e5e !important;
+}
+.yg-nav-primary {
+    border-bottom: 1px solid #5e5e5e !important;
+}
+.yg-sub-group a {
+    font-size: 12px !important;
+}
+.yg-yogurukul-icon {
+    color: white;
+    float: left;
+    font-size: 20px;
+    
+}
+ .yg-sub-group a:hover{
+    
+    color: #717171 !important;
+ }
+.yg-logo{
+    margin: 0!important;
+}
+.yg-nav-menus {
+    border-color: #009688 !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    
+}
+.yg-country {
+    padding-left: 20px;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+    background-color: none!important;
+    border-color: none!important;
+}
+.yg-formElement{
+    font-size: 14px;
+    height: 35px;
+}
+.yg-nav-in input::-moz-placeholder{
+    font-size: 11px;
+    line-height: 39px;
+}
+.yg-selectCountry{
+    height: 25px;
+    background-image: none;
+    border: 1px solid #d3d3d3 !important;
+    font-size: 13px; 
+    padding: 2px;    
+}
+.form-control.yg-selectCountry > option {
+    font-size: 13px !important;
+}
+.yg-country-signup{
+     padding: 0 13px;
+}
+.yg-form-horizontal .form-group{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.yg-icons-footer ul {
+    list-style: none;
+}
+
+.yg-footerCustom li {
+    width: 26%!important;
+}
+.banner_section .container-fluid {
+    padding: 0;
+}
+.bottom_footer {
+    background: #333333 none repeat scroll 0 0;
+    border-top: medium none;
+    padding: 0;
+}
+.bottom_footer p{
+    color:#fff !important;
+}
+.bottom_footer .container {
+    border-top: 1px solid #fff;
+    padding: 20px 0;
+}
+.yg-pr-h {
+  /*border-bottom: 1px solid #d3d3d3;*/
+  font-size: medium;
+  font-style: oblique;
+  font-weight: bold;
+  padding: 9px 0;
+  margin-bottom: 0;
+}
+.yg-upcoming-sessions thead tr {
+    background: #b0c5d1 none repeat scroll 0 0;
+}
+.yg-upcoming-sessions {
+  margin-top: 35px;
+}
+.table > thead > tr > th {
+  border-bottom: none !important;
+}
+/*.yg-pf-btn {
+  padding: 0;
+  width: 60%;
+}*/
+.yg-upcoming-sessions .hiddenRow{
+   padding: 0;
+   border: none;
+}
+.fa-arrow-up {
+    color: green;
+}
+.fa-arrow-down {
+    color: red;
+}
+.yg-up-t {
+  color: black;
+  font-weight: 400;
+}
+.yg-up-j {
+  color: red;
+}
+.yg-sg-c {
+  color: red;
+  font-size: 10px;
+}
+.yg-pf-d label {
+  float: left;
+  font-weight: bold;
+  width: 15%;
+}
+.yg-pf-d p {
+  float: left;
+  text-align: justify;
+  width: 85%;
+}
+.yg-pf-do {
+  color: green;
+  font-size: 19px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.yg-db-notif i {
+  color: maroon;
+  float: right;
+  font-size: 20px;
+  position: relative;
+  right: 9px;
+  top: 11px;
+  cursor: pointer;
+}
+.yg-db-notif {
+  float: left;
+  margin: 2px;
+  width: 100%;
+}
+.yg-upcoming-sessions td{
+  border-top: none !important;
+}
+.yg-s-ps {
+  color: #00aff0;
+}
+.yg-st-f {
+  float: right;
+  margin: 13px 0;
+  width: 100%;
+}
+.yg-st-f .btn {
+  float: right;
+}
+.tab-bar.grey-tab {
+    background: #e6e6e6 none repeat scroll 0 0;
+    float: left;
+    width: 100%;
+    padding: 0;
+}
+.tab-bar > li {
+    display: inline-block;
+    float: left;
+    margin-bottom: -1px;
+}
+.tab-bar.grey-tab li.active a {
+    background: #f7f7f7 none repeat scroll 0 0;
+    color: #777;
+    border-radius: 0;
+    text-shadow: 0 1px 0 #fff;
+}
+.tab-bar > li a {
+    display: block;
+    padding: 10px;
+    transition: color 0.2s ease 0s;
+}
+.yg-pf-socialIcons {
+  float: left;
+  width: 100%;
+}
+
+.google-plus-hover i:hover, .google-plus-hover:hover {
+    background: #d14836 none repeat scroll 0 0 !important;
+    color: #fff;
+}
+.facebook-hover i:hover, .facebook-hover:hover {
+    background: #3b5998 none repeat scroll 0 0 !important;
+    color: #fff;
+}
+.twitter-hover i:hover, .twitter-hover:hover {
+    background: #00aced none repeat scroll 0 0 !important;
+    color: #fff;
+}
+.google-plus-hover, .twitter-hover, .facebook-hover{
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50em;
+    display: inline-block;
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    width: 25px;
+    cursor: pointer;
+}
+.yg-generalInfo .form-group {
+    float: left;
+    margin-bottom: 13px;
+    width: 100%;
+}
+.yg-pf-optional {
+    float: left;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    width: 100%;
+}
+.yg-pf-edit-overview{
+   display: none;
+}
+.yg-pf-up {
+    float: right;
+}
+.yg-pf-edit-overview, .yg-pf-overview {
+  float: left;
+  margin-bottom: 20px !important;
+}
+.yg-pf-ast{
+  display: none;
+}
+/* Media Query Starts  for 240px Here*/
+@media only screen and (min-width : 240px) and (max-width: 319px) {
+    .yg-carousel-caption{
+        bottom: 443px;
+        float: left;
+        position: relative;
+        width: 81%;
+        left: 34px !important;
+
+    }
+    .yg-carousel-caption .btn {
+        float: left;
+        width: 97%;
+        font-size:10px !important;
+    }
+    .yg-signup {
+          background-color: rgba(255, 255, 229, 0.48);
+          bottom: 384px;
+          position: relative;
+          right: 10px;
+          text-align: center;
+          width: 216px;
+        }
+        .yg-top {
+          display: none;
+        }
+
+        .yg-nav-h {
+          height: auto ;
+        }
+
+        .yg-nav-ul {
+            margin: 0;
+            width: 100%;
+        }
+
+        .yg-carousel-caption {
+          bottom: 282px;
+          float: left;
+          left: 0;
+        }
+
+        #signInModal .modal-dialog, #signUpModal .modal-dialog {
+            width: 100%;
+        }
+
+        .yg-nav-so {
+            padding: 0;
+        }
+       
+       .yg-sec-stu {
+            width: 100% !important;
+            overflow-x: scroll !important;
+        }
+
+        .yg-guru-profileDetails2 div:nth-child(2) {
+            border-left: none;
+        }
+
+        .yg-msg-c {
+            float: left;
+            margin: 30px 15px;
+            padding: 15px;
+            width: 100%;
+        }
+
+}
+/* Media Query Ends Here for 240px*/
+
+/* Media Query Starts  for 320px Here*/
+@media only screen and (min-width : 320px) and (max-width: 419px) {
+    .yg-carousel-caption{
+        bottom: 443px;
+        float: left;
+        position: relative;
+        width: 81%;
+        left: 34px !important;
+
+    }
+    .yg-carousel-caption .btn {
+        float: left;
+        width: 97%;
+        font-size:10px !important;
+    }
+    .yg-signup {
+          background-color: rgba(255, 255, 229, 0.48);
+          bottom: 384px;
+          position: relative;
+          right: 27px;
+          text-align: center;
+        }
+      .yg-top {
+          display: none;
+        }
+
+         .yg-nav-h {
+            height: auto ;
+        }
+
+        .yg-nav-ul {
+            margin: 0;
+            width: 100%;
+        }
+
+        .yg-carousel-caption {
+          bottom: 282px;
+          float: left;
+          left: 0;
+        }
+
+        #signInModal .modal-dialog, #signUpModal .modal-dialog {
+            width: 100%;
+        }
+
+        .yg-nav-so {
+            padding: 0;
+        }
+
+       .yg-sec-stu {
+            width: 100%;
+            overflow-x: scroll;
+        }
+
+        .yg-guru-profileDetails2 div:nth-child(2) {
+            border-left: none;
+        }
+        
+        .yg-msg-c {
+            float: left;
+            margin: 30px 15px;
+            padding: 15px;
+            width: 100%;
+        }
+}
+/* Media Query Ends Here for 320px*/
+
+/* Media Query Starts  for 480px Here*/
+@media only screen and (min-width : 480px) and (max-width: 767px) {
+    .yg-carousel-caption{
+        bottom: 443px;
+        float: left;
+        position: relative;
+        width: 81%;
+        left: 34px !important;
+
+    }
+    .yg-carousel-caption .btn {
+        float: left;
+        width: 97%;
+        font-size:10px !important;
+    }
+   .yg-signup {
+          background-color: rgba(255, 255, 229, 0.48);
+          bottom: 384px;
+          position: relative;
+          right: 60px;
+          text-align: center;
+          width: 74%;
+        }
+      .yg-top {
+          display: none;
+        }
+
+        .yg-nav-h {
+          height: auto ;
+        }
+        .yg-nav-ul {
+            margin: 0;
+            width: 100%;
+        }
+
+        .yg-carousel-caption {
+          bottom: 282px;
+          float: left;
+          left: 0;
+        }
+
+        .yg-nav-ul {
+          float: right;
+          font-size: 12px !important;
+        }
+
+        #signInModal .modal-dialog, #signUpModal .modal-dialog {
+            width: 100%;
+        }
+
+        .yg-nav-so {
+            padding: 0;
+        }
+
+        .yg-guru-profileDetails2 div:nth-child(2) {
+            border-left: none;
+        }
+
+        .yg-price , .yg-ratings, .yg-streams, .yg-datetime, .yg-location{
+            float: left;
+            width: 100%;
+            height: 150px;
+        } 
+
+        .yg-sec-stu {
+            width: 100%;
+            overflow-x: scroll;
+        } 
+
+        .yg-msg-c {
+            float: left;
+            margin: 30px 15px;
+            padding: 15px;
+            width: 100%;
+        }      
+
+}
+/* Media Query Ends Here for 480px*/
+
+/* Media Query Starts  for 768px Here*/
+@media only screen and (min-width : 768px) and (max-width: 1023px) {
+
+        .yg-signup {
+          background-color: rgba(255, 255, 229, 0.48);
+          bottom: 200px;
+          position: relative;
+          right: 100px;
+          text-align: center;
+          width: 250px;
+        }
+
+        .yg-carousel-caption {
+          bottom: 282px;
+          float: left;
+          left: 0;
+        }
+
+        .yg-nav-ul {
+            float: right;
+            font-size: 10px !important;
+            width: 83% !important;
+        }
+
+        .yg-nav-buttons {
+            font-size: 10px;
+            margin: 5px 3px;
+            padding: 3px;
+            width: 80px;
+        }
+
+        .yg-nav-s {
+            border: 1px solid #f3f3f3;
+            float: right;
+            font-size: 10px;
+            height: 22px;
+            margin: 5px 3px;
+            padding: 0;
+            width: 44px;
+          }
+
+          .search_form .col-md-9 {
+              float: left;
+              width: 70%;
+            }
+
+          .search_form .col-md-3 {
+              float: left;
+              width: 30%;
+            }
+
+            .yg-slide-h {
+                bottom: 83px;
+                float: left;
+                left: 250px;
+                position: relative;
+            }
+
+            .yg-nav-so {
+                padding: 0;
+            }
+
+            .yg-guru-profileImage{
+                float: left;
+                width: 20%;
+            }
+
+            .yg-guru-profileDetails2 div:nth-child(2) {
+                border-left: none;
+            }
+
+            .yg-price , .yg-ratings, .yg-streams, .yg-datetime, .yg-location{
+                float: left;
+                width: 50%;
+                height: 150px;
+            }
+
+}
+/* Media Query Ends Here for 768px*/
+
+/* Media Query Starts  for 1024px Here*/
+@media only screen and (max-width : 1024px) {
+
+        .yg-nav-ul {
+          float: right;
+          font-size: 12px !important;
+        }
+
+        .yg-slide-h {
+          left: 400px;
+          position: relative;
+        }
+
+        .yg-signup {
+          position: relative;
+          right: 100px;
+        }
+
+        .yg-benifits-div ul {
+           padding-left: 20px;
+        }
+
+       /* .yg-benifits-div span {
+           width: 100%;
+           text-align: center;
+          }
+        */
+          .yg-nav-so {
+                padding: 0;
+            }
+
+}
+/* Media Query Ends Here for 1024px*/

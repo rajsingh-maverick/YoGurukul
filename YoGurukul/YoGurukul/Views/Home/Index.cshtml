@@ -1,0 +1,288 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!-- MenuBar Ends here-->
+<!-- carousel starts here -->
+<section class="banner_section">
+    <div class="container-fluid">
+
+        <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+            <!-- <ol class="carousel-indicators">
+              <li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-captions" data-slide-to="1" class=""></li>
+              <li data-target="#carousel-example-captions" data-slide-to="2" class=""></li>
+            </ol>-->
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active yg-slider-img">
+                    <img data-src="/Content/images/image1.jpg" src="/Content/images/image1.jpg" data-holder-rendered="true">
+                    <div class="carousel-caption yg-carousel-caption">
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+
+                        <input class="btn btn-primary" data-target="#modalSession" data-toggle="modal" type="submit" value="Post Your Requirement" />
+
+                    </div>
+                </div>
+
+                <div class="item yg-slider-img">
+                    <img data-src="/Content/images/image2.jpg" src="/Content/images/image2.jpg" data-holder-rendered="true">
+                    <div class="carousel-caption yg-carousel-caption">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <input class="btn btn-primary" data-target="#modalSession" data-toggle="modal" type="submit" value="Post Your Requirement" />
+                    </div>
+                </div>
+                <div class="item yg-slider-img">
+                    <img data-src="/Content/images/image3.jpg" src="/Content/images/image3.jpg" data-holder-rendered="true">
+                    <div class="carousel-caption yg-carousel-caption">
+                        <h3>Third slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <input class="btn btn-primary" type="submit" data-target="#modalSession" data-toggle="modal" value="Post Your Requirement" />
+                    </div>
+                </div>
+
+            </div>
+
+            @*<div class="yg-signup right">
+                    <ul>
+                        <li><button class="btn btn-primary">SIGNUP AS STUDENT</button></li>
+                        <li><button class="btn btn-primary">SIGNUP AS GURU</button></li>
+                    </ul>
+
+                </div>*@
+
+        </div>
+        @*@using (Html.BeginForm("SaveSession", "Account", FormMethod.Post))
+            {*@
+        <div class="modal" id="modalSession" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title tune-modal-sign">Request your Session</h4>
+                    </div>
+
+                    <div class="modal-body yg-modal-sign">
+                        <div class="form-group yg-nav-in">
+                            <div class="col-lg-12">
+                                Topic <input name="topic" class="form-control" id="txtTopic" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group yg-nav-in">
+                            <div class="col-lg-12">
+                                @*Date <input name="topic" class="form-control" id="txtDate" type="date">*@
+                                Week Day<select class="form-control yg-selectCountry" id="ddlWeekDay" required="">
+                                    @*@foreach (Gurukul.Models.Week weekday in Model)
+                                    {
+                                        <option value="@weekday.WeekId">@weekday.WeekName</option>
+                                    }*@
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group yg-country-signup yg-nav-in">
+                            <div class="sample">
+                                Prefered TimeSlot<select class="form-control yg-selectCountry" id="ddlTimeSlot" required="" name="TimeSlotId">
+                                    <option value="0">No Preference</option>
+                                    <option value="1">Morning(8am-12pm)</option>
+                                    <option value="2">Afternoon(12pm-4pm)</option>
+                                    <option value="3">Evening(4pm-8pm)</option>
+                                    <option value="4">Night(8pm-12am)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <input type="submit" class="btn btn-primary yg-loginModal-button" data-dismiss="modal" aria-hidden="true" data-target="#signUpModal" data-toggle="modal" value="Submit" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*}*@
+        @*<div class="yg-slide-h"><a href="#yg-how-works" class="btn btn-primary">How it works</a></div>*@
+
+
+
+
+
+    </div><!--./banner-->
+    <!--./container-fluid-->
+</section><!--./banner_section-->
+<!-- carousel ends here-->
+<!-- About Us Starts Here-->
+<section id="yg-about-yo" class="yg-about-yo text-center">
+    <h2>About YoGurkul<hr></h2>
+    <div class="col-md-12">
+        <div class="col-md-6">
+            <img src="/Content/images/music.jpg" width="100%" height="60%">
+        </div>
+        <div class="col-md-6">
+            <p class="yg-ab-txt"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat arcu ut orci porta, eget porttitor felis suscipit. Sed a nisl ullamcorper, tempus augue at, rutrum lacus. Duis et turpis eros. Duis ex metus, facilisis nec porta non, accumsan vel turpis. Proin euismod, sem a mollis vestibulum, ligula elit faucibus erat, in dignissim sapien leo eget quam. </p>
+
+            <p class="yg-ab-txt"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat arcu ut orci porta, eget porttitor felis suscipit. Sed a nisl ullamcorper, tempus augue at, rutrum lacus. Duis et turpis eros. Duis ex metus, facilisis nec porta non, accumsan vel turpis. Proin euismod, sem a mollis vestibulum, ligula elit faucibus erat, in dignissim sapien leo eget quam. </p>
+        </div>
+    </div>
+</section>
+<!-- About Us Ends Here-->
+<!-- How it works Started -->
+
+<div class="hiw-row row text-center yg-how-works" id="yg-how-works">
+
+    <h2> How It Works<hr> </h2>
+
+    <!-- HOW IT WORKS - ITEM 1 -->
+    <div class="col-sm-6 col-md-3 fadeIn animated done-animation" data-animation="fadeIn">
+        <div class="hiw-item">
+            <img class="hiw-item-picture" src="/Content/images/requirment.jpg" width="100%" height="10%" alt="">
+            <div class="hiw-item-text">
+                <!--<span class="hiw-item-icon">1</span>-->
+                <h4 class="hiw-item-title">Select Your Requirement</h4>
+                <p class="hiw-item-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Vivamus eu sollicitudin lacus, nec ultricies lorem.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOW IT WORKS - ITEM 2 -->
+    <div class="col-sm-6 col-md-3 fadeIn animated done-animation" data-animation="fadeIn">
+        <div class="hiw-item even">
+            <img class="hiw-item-picture" src="/Content/images/guru.jpg" width="100%" height="10%" alt="">
+            <div class="hiw-item-text">
+                <!--<span class="hiw-item-icon">2</span>-->
+                <h4 class="hiw-item-title">Choose Your Guru</h4>
+                <p class="hiw-item-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Vivamus eu sollicitudin lacus, nec ultricies lorem.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden-md hidden-lg clear"></div>
+
+    <!-- HOW IT WORKS - ITEM 3 -->
+    <div class="col-sm-6 col-md-3 fadeIn animated done-animation" data-animation="fadeIn">
+        <div class="hiw-item">
+            <img class="hiw-item-picture" src="/Content/images/schedule-trail.jpg" width="100%" height="10%" alt="">
+            <div class="hiw-item-text">
+                <!--<span class="hiw-item-icon">3</span>-->
+                <h4 class="hiw-item-title">Schedule a Trail</h4>
+                <p class="hiw-item-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Vivamus eu sollicitudin lacus, nec ultricies lorem.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOW IT WORKS - ITEM 4 -->
+    <div class="col-sm-6 col-md-3 fadeIn animated done-animation" data-animation="fadeIn">
+        <div class="hiw-item even">
+            <img class="hiw-item-picture" src="/Content/images/learn-live.jpg" width="100%" height="10%" alt="">
+            <div class="hiw-item-text">
+                <!--<span class="hiw-item-icon">4</span>-->
+                <h4 class="hiw-item-title">Subscribe &amp; Learn Live </h4>
+                <p class="hiw-item-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Vivamus eu sollicitudin lacus, nec ultricies lorem.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- How it wors ended-->
+<!-- video starts-->
+<section class="yg-video" id="yg-video">
+    <!--<h2> The Video </h2>-->
+    <video controls="" width="500" height="281" class="yg-home-video">
+        <source src="/Content/video/SampleVideo_1080x720_1mb.mp4" type="video/mp4">
+    </video>
+</section>
+<!-- video ends here-->
+<!-- testimonial slider starts here -->
+<div id="divMeetGurus"></div>
+
+
+@*<div class="yg-slider-buttons">
+        <button class="btn btn-primary">Want to Learn?</button>
+        <button class="btn btn-primary">Become a Guru?</button>
+    </div>*@
+
+<!-- testimonial slider ends here-->
+<!--Benefits starts here-->
+<div class="yg-benifits-section row" id="yg-benifits">
+
+    <span class="yg-benifits-learning-btn"><button class="btn btn-primary" data-target="#signUpModal" data-toggle="modal">SIGN UP &amp; START LEARNING</button></span>
+    <h2> Benefits of Live 1 to 1 Tutoring <hr></h2>
+    <div class="row yg-benifits col-md-12">
+        <div class="col-md-4 yg-benifits-div">
+            <div class="col-md-12">
+                <span class="col-md-2"><i class="fa fa-microphone"></i></span>
+
+                <ul class="col-md-10">
+                    <li class="yg-benifits-header">PERSONALIZED LIVE 1-TO-1 TEACHING</li>
+                    <li>Dedicated teaches, 100% personal attention</li>
+                    <li>Teaching at students pace</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-4 yg-benifits-div">
+            <div class="col-md-12">
+                <span class="col-md-2"><i class="fa fa-users"></i></span>
+
+                <ul class="col-md-10">
+                    <li class="yg-benifits-header">BETTER THAN GROUP TUTIONS</li>
+                    <li>Students can ask dought freely</li>
+                    <li>Aligned to school ciriculum</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-4 yg-benifits-div">
+            <div class="col-md-12">
+                <span class="col-md-2"><i class="fa fa-headphones"></i></span>
+
+                <ul class="col-md-10">
+                    <li class="yg-benifits-header">BETTER THAN RECORDED LECTURES</li>
+                    <li>2 way interaction</li>
+                    <li>Monitoring and counselling</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row yg-benifits col-md-12">
+
+        <div class="col-md-4 yg-benifits-div">
+            <div class="col-md-12">
+                <span class="col-md-2"><i class="fa fa-clock-o"></i></span>
+
+                <ul class="col-md-10">
+                    <li class="yg-benifits-header">SAVE ON TIME</li>
+                    <li>No communicating</li>
+                    <li>No looking for right teacher</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-4 yg-benifits-div">
+            <div class="col-md-12">
+                <span class="col-md-2"><i class="fa fa-sun-o"></i></span>
+
+                <ul class="col-md-10">
+                    <li class="yg-benifits-header">ANYTIME LEARNING</li>
+                    <li>Choose your own time</li>
+                    <li>Choose your own topics</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-4 yg-benifits-div">
+            <div class="col-md-12">
+                <span class="col-md-2"><i class="fa fa-lock"></i></span>
+                <ul class="col-md-10">
+                    <li class="yg-benifits-header">SAFETY</li>
+                    <li>Learn safety of home</li>
+                    <li>No risk of travel</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--Benefits ends here-->

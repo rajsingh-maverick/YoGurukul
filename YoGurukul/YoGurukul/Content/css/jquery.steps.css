@@ -1,0 +1,518 @@
+﻿/*
+    Common 
+*/
+
+.wizard,
+.tabcontrol
+{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+	position: relative;
+}
+
+.wizard a,
+.tabcontrol a
+{
+    outline: 0;
+}
+
+.wizard ul,
+.tabcontrol ul
+{
+ /*list-style: none !important;
+padding: 40px 0px;
+margin: 0;
+float: left;*/
+list-style: none !important;
+float: none;
+width: 1170px;
+margin: 0px auto;
+}
+
+.wizard ul > li,
+.tabcontrol ul > li
+{
+    display: block;
+    padding: 0;
+}
+
+/* Accessibility */
+.wizard > .steps .current-info,
+.tabcontrol > .steps .current-info
+{
+    position: absolute;
+    left: -999em;
+}
+
+.wizard > .content > .title,
+.tabcontrol > .content > .title
+{
+    position: absolute;
+    left: -999em;
+}
+
+
+
+/*
+    Wizard
+*/
+
+.wizard > .steps
+{
+    position: relative;
+    display: block;
+    width: 100%;
+	background: #f6f6f6;
+}
+
+.wizard.vertical > .steps
+{
+    display: inline;
+    float: left;
+    width: 30%;
+}
+
+.wizard > .steps .number
+{
+font-size:0px;
+width: 130px;
+height: 130px;
+line-height: 130px;
+float: left;
+margin: 0px 25%;
+background: rgb(255, 255, 255);
+border-radius: 50%;
+border: 3px solid #1e1e1e;
+position: relative;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-ms-transition: all 0.3s;
+-o-transition: all 0.3s; color:#1e1e1e;
+/*text-shadow: rgb(31, 45, 57) 1px 1px, rgb(31, 45, 57) 2px 2px, rgb(31, 45, 57) 3px 3px, rgb(31, 45, 57) 4px 4px, rgb(31, 45, 57) 5px 5px, rgb(31, 45, 57) 6px 6px, rgb(31, 45, 57) 7px 7px, rgb(31, 45, 57) 8px 8px, rgb(31, 45, 57) 9px 9px, rgb(31, 45, 58) 10px 10px, rgb(31, 45, 58) 11px 11px, rgb(31, 46, 58) 12px 12px, rgb(31, 46, 58) 13px 13px, rgb(32, 46, 59) 14px 14px, rgb(32, 46, 59) 15px 15px, rgb(32, 46, 59) 16px 16px, rgb(32, 46, 59) 17px 17px, rgb(32, 47, 60) 18px 18px, rgb(32, 47, 60) 19px 19px, rgb(32, 47, 60) 20px 20px, rgb(32, 47, 60) 21px 21px, rgb(33, 47, 61) 22px 22px, rgb(33, 47, 61) 23px 23px, rgb(33, 48, 61) 24px 24px, rgb(33, 48, 61) 25px 25px;*/
+}
+.wizard > .steps .number:before {
+position: absolute;
+content: "";
+font: normal normal normal 14px/1 FontAwesome;
+font-size: 40px;
+line-height: 126px;
+width: 100%;
+height: 100%;
+background-repeat: no-repeat;
+background-position: center;
+top: 0;
+left: 0;
+ 
+}
+.wizard > .steps .number:after{
+position: absolute;
+content: '';
+width: 154px;
+height: 12px;
+top: 47%;
+left: 101%;
+background-image: url(../images/line.png);
+}
+.wizard > .steps > ul > li:first-child .number:before {
+content: "\f007";
+}
+.wizard > .steps > ul > li:nth-child(2) .number:before {
+content: "\f085";
+}
+.wizard > .steps > ul > li:nth-child(3) .number:before {
+content: "\f041";
+}
+.wizard > .steps > ul > li:last-child .number:before {
+content: "\f093";
+}
+.post_job > .steps > ul > li:first-child .number:before {
+content: "\f1ea";
+}
+.post_job > .steps > ul > li:nth-child(2) .number:before {
+content: "\f085";
+}
+.post_job > .steps > ul > li:nth-child(3) .number:before {
+content: "\f0b1";
+}
+.post_job > .steps > ul > li:last-child .number:before {
+content: "\f1d8";
+}
+
+.wizard > .steps > ul > li:hover .wizard > .steps .number{
+background: #11a8ab;
+border-color: #029598;
+}
+.wizard > .steps > ul > li
+{
+    width: 25%;
+	padding: 40px 0px;
+position: relative;
+}
+.wizard > .steps > ul > li.current:after {
+position: absolute;
+width: 0;
+height: 0;
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+border-bottom: 15px solid #1e1e1e;
+content: '';
+bottom: 0px;
+left: 33%;
+}
+.wizard > .steps > ul > li,
+.wizard > .actions > ul > li
+{
+    float: left;
+}
+.wizard > .steps > ul > li:last-child .circle:after {
+display: none;
+}
+.wizard.vertical > .steps > ul > li
+{
+    float: none;
+    width: 100%;
+}
+.wizard > .steps > ul > li a h2, .wizard > .actions > ul > li a h2 {
+float: left;
+width: 100%;
+margin: 0px;
+padding: 10px 0px;
+color: #1e1e1e;
+min-height: 70px;
+text-transform: capitalize; font-family:"open Sans"; font-size:18px;
+}
+.wizard > .steps > ul > li a p, .wizard > .actions > ul > li a p {
+float: left;
+width: 100%;
+color: #000;
+}
+
+.wizard > .steps a,
+.wizard > .steps a:hover,
+.wizard > .steps a:active
+{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align:center;
+}
+
+.wizard > .steps .disabled a,
+.wizard > .steps .disabled a:hover,
+.wizard > .steps .disabled a:active
+{
+    cursor: default;
+}
+
+.wizard > .steps .current a .number,
+.wizard > .steps .current a:hover .number,
+.wizard > .steps .current a:active .number
+{
+    background: #ed654b;
+    border-color: #cb4126;
+    color: #fff;
+    cursor: default;
+	/*text-shadow: rgb(15, 153, 156) 1px 1px, rgb(15, 153, 156) 2px 2px, rgb(15, 153, 156) 3px 3px, rgb(15, 153, 156) 4px 4px, rgb(15, 153, 156) 5px 5px, rgb(15, 153, 156) 6px 6px, rgb(15, 153, 156) 7px 7px, rgb(15, 154, 157) 8px 8px, rgb(15, 154, 157) 9px 9px, rgb(15, 155, 158) 10px 10px, rgb(15, 156, 159) 11px 11px, rgb(15, 156, 159) 12px 12px, rgb(15, 157, 160) 13px 13px, rgb(15, 158, 161) 14px 14px, rgb(15, 158, 161) 15px 15px, rgb(15, 159, 162) 16px 16px, rgb(15, 160, 163) 17px 17px, rgb(16, 160, 163) 18px 18px, rgb(16, 161, 164) 19px 19px, rgb(16, 162, 165) 20px 20px, rgb(16, 162, 165) 21px 21px, rgb(16, 163, 166) 22px 22px, rgb(16, 164, 167) 23px 23px, rgb(16, 164, 167) 24px 24px, rgb(16, 165, 168) 25px 25px;*/
+}
+
+.wizard > .steps .done a:hover .number
+{
+    color: #fff;
+	background: #ed654b;
+    border-color: #cb4126;
+	/*text-shadow: rgb(15, 153, 156) 1px 1px, rgb(15, 153, 156) 2px 2px, rgb(15, 153, 156) 3px 3px, rgb(15, 153, 156) 4px 4px, rgb(15, 153, 156) 5px 5px, rgb(15, 153, 156) 6px 6px, rgb(15, 153, 156) 7px 7px, rgb(15, 154, 157) 8px 8px, rgb(15, 154, 157) 9px 9px, rgb(15, 155, 158) 10px 10px, rgb(15, 156, 159) 11px 11px, rgb(15, 156, 159) 12px 12px, rgb(15, 157, 160) 13px 13px, rgb(15, 158, 161) 14px 14px, rgb(15, 158, 161) 15px 15px, rgb(15, 159, 162) 16px 16px, rgb(15, 160, 163) 17px 17px, rgb(16, 160, 163) 18px 18px, rgb(16, 161, 164) 19px 19px, rgb(16, 162, 165) 20px 20px, rgb(16, 162, 165) 21px 21px, rgb(16, 163, 166) 22px 22px, rgb(16, 164, 167) 23px 23px, rgb(16, 164, 167) 24px 24px, rgb(16, 165, 168) 25px 25px;*/
+}
+
+.wizard > .steps .error a,
+.wizard > .steps .error a:hover,
+.wizard > .steps .error a:active
+{
+    background: #ff3111;
+    color: #fff;
+}
+
+.wizard > .content
+{
+    /*background: #eee;
+    display: block;
+    margin: 0.5em;
+    min-height: 35em;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;*/
+	background: #1e1e1e;
+display: block;
+margin: 0.5em;
+min-height: 14em;
+overflow: hidden;
+position: relative;
+width: auto;
+width: 1170px;
+float: none;
+margin: 0px auto;
+
+}
+
+.wizard.vertical > .content
+{
+    display: inline;
+    float: left;
+    margin: 0 2.5% 0.5em 2.5%;
+    width: 65%;
+}
+
+.wizard > .content > .body
+{
+    float: left;
+    width: 100%;
+    padding: 2.5%;
+}
+
+.wizard > .content > .body ul
+{
+    list-style: disc !important;
+}
+
+.wizard > .content > .body ul > li
+{
+    display: list-item;
+}
+
+.wizard > .content > .body > iframe
+{
+    border: 0 none;
+    width: 100%;
+    height: 100%;
+}
+
+.wizard > .content > .body input
+{
+    display: block;
+   
+}
+
+.wizard > .content > .body input[type="checkbox"]
+{
+    display: inline-block;
+}
+
+.wizard > .content > .body input.error
+{
+    background: rgb(251, 227, 228);
+    border: 1px solid #fbc2c4;
+    color: #8a1f11;
+}
+
+
+
+.wizard > .content > .body label
+{
+    display: inline-block;
+    margin-bottom: 0.5em;
+	width:100%;
+}
+
+.wizard > .content > .body label.error
+{
+    color: #8a1f11;
+    display: inline-block;
+    margin-left: 1.5em;
+}
+
+.wizard > .actions
+{
+   /* position: absolute;
+    display: block;
+    text-align: right;
+    width: 100%;
+	bottom: 4%;
+left: 4%;*/
+position: relative;
+display: block;
+width: 100%;
+float: left;
+}
+.wizard > .actions ul {
+padding: 0px;
+}
+
+.wizard.vertical > .actions
+{
+    display: inline;
+    float: right;
+    margin: 0 2.5%;
+    width: 95%;
+}
+
+.wizard > .actions > ul
+{
+    /*display: inline-block;
+    text-align: right;*/
+background: #1e1e1e;
+display: block;
+position: relative;
+min-height: 70px;
+padding: 0px 2.5%;
+}
+
+.wizard > .actions > ul > li
+{
+    margin: 0 0.5em;
+}
+
+.wizard.vertical > .actions > ul > li
+{
+    margin: 0 0 0 1em;
+}
+
+.wizard > .actions a,
+.wizard > .actions a:hover,
+.wizard > .actions a:active
+{
+   /* background: #2184be;
+    color: #fff;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;*/
+	background: #ed654b;
+color: #fff;
+display: block;
+padding: 6px 30px;
+text-decoration: none;
+/* -webkit-border-radius: 5px; */
+-moz-border-radius: 5px;
+/* border-radius: 5px; */
+text-transform: uppercase;
+font-family: 'Oswald', sans-serif;
+font-size: 16px;
+font-weight: normal;
+}
+
+.wizard > .actions .disabled a,
+.wizard > .actions .disabled a:hover,
+.wizard > .actions .disabled a:active
+{
+    background: #363636; border:1px solid #fff;
+    color: #fff;
+}
+
+.wizard > .loading
+{
+}
+
+.wizard > .loading .spinner
+{
+}
+.wizard > .steps > ul > li:last-child .number:after, .wizard > .actions > ul > li:last-child .number:after {
+display: none;
+}
+
+
+
+/*
+    Tabcontrol
+*/
+
+.tabcontrol > .steps
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.tabcontrol > .steps > ul
+{
+    position: relative;
+    margin: 6px 0 0 0;
+    top: 1px;
+    z-index: 1;
+}
+
+.tabcontrol > .steps > ul > li
+{
+    float: left;
+    margin: 5px 2px 0 0;
+    padding: 1px;
+
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tabcontrol > .steps > ul > li:hover
+{
+    background: #edecec;
+    border: 1px solid #bbb;
+    padding: 0;
+}
+
+.tabcontrol > .steps > ul > li.current
+{
+    background: #fff;
+    border: 1px solid #bbb;
+    border-bottom: 0 none;
+    padding: 0 0 1px 0;
+    margin-top: 0;
+}
+
+.tabcontrol > .steps > ul > li > a
+{
+    color: #5f5f5f;
+    display: inline-block;
+    border: 0 none;
+    margin: 0;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.tabcontrol > .steps > ul > li > a:hover
+{
+    text-decoration: none;
+}
+
+.tabcontrol > .steps > ul > li.current > a
+{
+    padding: 15px 30px 10px 30px;
+}
+
+.tabcontrol > .content
+{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 35em;
+    overflow: hidden;
+    border-top: 1px solid #bbb;
+    padding-top: 20px;
+}
+
+.tabcontrol > .content > .body
+{
+    float: left;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.tabcontrol > .content > .body ul
+{
+    list-style: disc !important;
+}
+
+.tabcontrol > .content > .body ul > li
+{
+    display: list-item;
+}

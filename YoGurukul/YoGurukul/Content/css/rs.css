@@ -1,0 +1,617 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+/**index page**/
+
+.nav {
+	padding-left: 0px !important;
+}
+.nav > li > a {
+	padding-left: 12px !important;
+	padding-right: 12px !important;
+}
+/*ul.navbar-right li {
+	padding: 16px 6px !important;
+}
+.btn {
+	padding: 12px 13px !important;
+}*/
+.dropdown-menu {
+	width: 136%;
+}
+ul.navbar-right li > ul.dropdown-menu li {
+	padding: 0px !important;
+}
+.dropdown-menu > li > a {
+	padding: 10px;
+}
+.banner_part h1 {
+	font-size: 40px;
+}
+.recent_job_right {
+	width: 70%;
+}
+.recent_job_category {
+	padding-bottom: 10px;
+	width: 50%;
+}
+.slider_right {
+	width: 70%;
+}
+.footer_input {
+	width: 80%;
+}
+.recent_tweet ul li a {
+	width: 85%;
+}
+/**search page**/
+
+.accordion-inner {
+	padding: 14px;
+}
+.checkbox, .radio {
+	margin-right: 10px;
+}
+.company_img {
+	width: 15%;
+}
+.job_title {
+	width: 85%;
+}
+/**seacr_single page**/
+
+a.small_img {
+	float: left;
+	width: 50%;
+}
+/**post_job page**/
+
+.wizard ul, .tabcontrol ul, .wizard > .content {
+	width: 970px !important;
+}
+}
+ @media (min-width: 768px) and (max-width: 991px) {
+/**index page**/
+.work_steps h2{ font-size:16px; }
+.create_profile {
+	margin: 10px 12px auto;
+    width: 100%;
+}
+.navbar-collapse {
+	padding: 0px !important;
+}
+.nav {
+	padding-left: 0px !important;
+}
+.nav > li > a {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+.banner{padding:34px 0px 0px 0px;}
+ul.navbar-right {
+	width: 100% !important;
+}
+input[type="text"], input[type="password"], select, input[type="email"] {
+margin-bottom:10px;
+}
+.nav.navbar-nav {
+	width: 100%;
+}
+.banner_part {
+	text-align: center;
+	min-height: 280px;
+}
+.banner_part p {
+	float: none;
+	width: 80%;
+	margin: 0px auto;
+}
+ 
+.form-group {
+	margin-bottom: 15px !important;
+}
+.circle:after {
+	display: none;
+}
+.category_div {
+	margin-bottom: 30px;
+}
+.copyright-left {
+	text-align: center;
+	color: #fff;
+}
+.footer_menu {
+	float: none;
+	width: 60%;
+	margin: 0px auto;
+}
+.slider_right {
+	width: 81.9%;
+	min-height: 130px;
+}
+/**search page**/
+
+.company_img {
+	width: 15%;
+}
+.job_title {
+	width: 85%;
+}
+/**search_single**/
+
+.sidebar {
+	margin-top: 20px;
+}
+/**post_job page**/
+
+.wizard ul, .tabcontrol ul {
+	width: 750px !important;
+}
+.wizard > .content {
+	width: 750px !important;
+}
+.wizard > .steps > ul > li a h2, .wizard > .actions > ul > li a h2 {
+	font-size: 20px !important;
+}
+.wizard > .steps > ul > li a p, .wizard > .actions > ul > li a p {
+	font-size: 14px !important;
+}
+.wizard > .steps .number {
+	width: 100px !important;
+	height: 100px !important;
+	line-height: 100px !important;
+}
+.wizard > .steps .current a .number, .wizard > .steps .current a:hover .number, .wizard > .steps .current a:active .number {
+	text-shadow: rgb(15, 153, 156) 1px 1px, rgb(15, 153, 156) 2px 2px, rgb(15, 153, 156) 3px 3px, rgb(15, 153, 156) 4px 4px, rgb(15, 153, 156) 5px 5px, rgb(15, 153, 156) 6px 6px, rgb(15, 153, 156) 7px 7px, rgb(15, 154, 157) 8px 8px, rgb(15, 154, 157) 9px 9px, rgb(15, 155, 158) 10px 10px, rgb(15, 156, 159) 11px 11px, rgb(15, 156, 159) 12px 12px, rgb(15, 157, 160) 13px 13px, rgb(15, 158, 161) 14px 14px, rgb(15, 158, 161) 15px 15px !important;
+}
+.wizard > .steps .number {
+	text-shadow: rgb(31, 45, 57) 1px 1px, rgb(31, 45, 57) 2px 2px, rgb(31, 45, 57) 3px 3px, rgb(31, 45, 57) 4px 4px, rgb(31, 45, 57) 5px 5px, rgb(31, 45, 57) 6px 6px, rgb(31, 45, 57) 7px 7px, rgb(31, 45, 57) 8px 8px, rgb(31, 45, 57) 9px 9px, rgb(31, 45, 58) 10px 10px, rgb(31, 45, 58) 11px 11px, rgb(31, 46, 58) 12px 12px, rgb(31, 46, 58) 13px 13px, rgb(32, 46, 59) 14px 14px, rgb(32, 46, 59) 15px 15px !important;
+}
+.wizard > .steps .done a:hover .number {
+	text-shadow: rgb(15, 153, 156) 1px 1px, rgb(15, 153, 156) 2px 2px, rgb(15, 153, 156) 3px 3px, rgb(15, 153, 156) 4px 4px, rgb(15, 153, 156) 5px 5px, rgb(15, 153, 156) 6px 6px, rgb(15, 153, 156) 7px 7px, rgb(15, 154, 157) 8px 8px, rgb(15, 154, 157) 9px 9px, rgb(15, 155, 158) 10px 10px, rgb(15, 156, 159) 11px 11px, rgb(15, 156, 159) 12px 12px, rgb(15, 157, 160) 13px 13px, rgb(15, 158, 161) 14px 14px, rgb(15, 158, 161) 15px 15px !important;
+}
+.wizard > .steps .number:before {
+	line-height: 100px !important;
+}
+.wizard > .actions > ul {
+	padding: 0px 1.5% !important;
+}
+
+}
+ @media (min-width: 736px) and (max-width: 767px) {
+ .banner {
+    width: 50%;
+}
+.banner_part h1 {
+text-align: center;
+ 
+}
+.custom_select{ margin-bottom:10px; }
+input[type="text"], input[type="password"], select, input[type="email"] {
+margin-bottom:10px;
+}
+.work_steps {
+    width: 25%;
+}
+.work_steps h2 { font-size:16px; }
+.footer_div {
+    float: left;
+    width: 49%;
+}
+ 
+ }
+ @media (min-width: 480px) and (max-width: 735px) {
+/**index page**/
+ .sidebar-offcanvas{ width:100%; }
+ .ctbg {
+    width: 100%;
+}
+.clear-all {
+    border-top:1px solid #ccc;
+    width: 100%;
+}
+ul.navbar-right {
+	width: 100%;
+}
+.navbar-collapse.in {
+	overflow-y: inherit !important;
+}
+.custom_select {
+	margin: 10px 0px;
+}
+.banner {
+	width: 100%;
+}
+.banner_part {
+	text-align: center;
+}
+.banner_part p {
+	width: 100%;
+}
+.circle:after {
+	display: none;
+}
+.recent_job {
+	text-align: center;
+	margin: 10px 0px;
+}
+.recent_job_left {
+	float: none;
+	margin: 0px auto;
+}
+.recent_job_right {
+	width: 100%;
+}
+.recent_job_category {
+	width: 40%;
+}
+.slider_left {
+	float: none;
+	width: 130px;
+	margin: 0px auto;
+}
+.slider_right {
+	text-align: center;
+	width: 100%;
+}
+.slide {
+	width: 235px !important;
+}
+.copyright-left {
+	text-align: center;
+}
+.footer_heading {
+	float: left;
+	width: 100%;
+	padding-top: 10px;
+}
+.footer_heading h5 {
+	padding-bottom: 10px;
+}
+/**search page**/
+
+.search_content ul li {
+	padding: 20px;
+}
+.company_img {
+	width: 21%;
+}
+.job_title {
+	width: 79%;
+}
+.job_detail {
+	width: 50%;
+	padding: 2px;
+}
+.job_detail i {
+	padding-right: 5px;
+}
+.dl-horizontal {
+	float: left;
+	width: 100%;
+}
+.dl-horizontal dt {
+	float: left;
+	width: 30%;
+}
+.dl-horizontal dd {
+	float: left;
+	width: 70%;
+}
+ul.job_detail_ul li {
+	padding: 2px 10px;
+}
+/**post_jobs**/
+
+.wizard ul, .tabcontrol ul {
+	width: 90% !important;
+}
+.wizard > .steps .number {
+	width: 80px !important;
+	height: 80px !important;
+	line-height: 80px !important;
+	text-shadow: rgb(31, 45, 57) 1px 1px, rgb(31, 45, 57) 2px 2px, rgb(31, 45, 57) 3px 3px, rgb(31, 45, 57) 4px 4px, rgb(31, 45, 57) 5px 5px, rgb(31, 45, 57) 6px 6px, rgb(31, 45, 57) 7px 7px, rgb(31, 45, 57) 8px 8px, rgb(31, 45, 57) 9px 9px, rgb(31, 45, 58) 10px 10px, rgb(31, 45, 58) 11px 11px, rgb(31, 46, 58) 12px 12px, rgb(31, 46, 58) 13px 13px, rgb(32, 46, 59) 14px 14px, rgb(32, 46, 59) 15px 15px !important;
+}
+.wizard > .steps .current a .number, .wizard > .steps .current a:hover .number, .wizard > .steps .current a:active .number {
+	text-shadow: rgb(15, 153, 156) 1px 1px, rgb(15, 153, 156) 2px 2px, rgb(15, 153, 156) 3px 3px, rgb(15, 153, 156) 4px 4px, rgb(15, 153, 156) 5px 5px, rgb(15, 153, 156) 6px 6px, rgb(15, 153, 156) 7px 7px, rgb(15, 154, 157) 8px 8px, rgb(15, 154, 157) 9px 9px, rgb(15, 155, 158) 10px 10px, rgb(15, 156, 159) 11px 11px, rgb(15, 156, 159) 12px 12px, rgb(15, 157, 160) 13px 13px, rgb(15, 158, 161) 14px 14px, rgb(15, 158, 161) 15px 15px !important;
+}
+.wizard > .steps .number:before {
+	font-size: 20px !important;
+	line-height: 80px !important;
+}
+.wizard > .steps > ul > li a h2, .wizard > .actions > ul > li a h2 {
+	font-size: 15px !important;
+	min-height: 96px !important;
+}
+.wizard > .steps > ul > li a p, .wizard > .actions > ul > li a p, .wizard > .steps .number:after {
+	display: none !important;
+}
+.wizard > .content {
+	width: 90% !important;
+}
+.wizard > .steps .done a:hover .number {
+	text-shadow: rgb(15, 153, 156) 1px 1px, rgb(15, 153, 156) 2px 2px, rgb(15, 153, 156) 3px 3px, rgb(15, 153, 156) 4px 4px, rgb(15, 153, 156) 5px 5px, rgb(15, 153, 156) 6px 6px, rgb(15, 153, 156) 7px 7px, rgb(15, 154, 157) 8px 8px, rgb(15, 154, 157) 9px 9px, rgb(15, 155, 158) 10px 10px, rgb(15, 156, 159) 11px 11px, rgb(15, 156, 159) 12px 12px, rgb(15, 157, 160) 13px 13px, rgb(15, 158, 161) 14px 14px, rgb(15, 158, 161) 15px 15px !important;
+}
+.add-photo-btn {
+	width: 40% !important;
+}
+.wizard > .actions > ul {
+	padding: 0px 1% !important;
+}
+.wizard > .steps > ul > li {
+	min-height: 250px !important;
+}
+/**payment page**/
+
+.pricing_div {
+	margin: 10px 0px;
+}
+input[type="text"], input[type="password"], select, input[type="email"] { 
+margin-bottom:10px;
+}
+.create_profile {
+    margin-left: 8em;
+}
+.login_Div{ width:100%; }
+.login_D{ height:750px; }
+
+}
+ @media (max-width: 479px) {
+/**index page**/
+
+h3 {
+	font-size: 15px !important;
+}
+ul.navbar-right {
+	float: left;
+	width: 100%;
+}
+ul.navbar-right li {
+	padding: 16px 4px !important;
+}
+.navbar-collapse.in {
+	overflow-y: inherit !important;
+}
+ul.navbar-right li > ul.dropdown-menu li {
+	padding: 0px !important;
+}
+.btn {
+	padding: 12px 15px;
+}
+.banner {
+	width: 100%;
+	padding: 20px 10px;
+}
+.circle:after {
+	display: none;
+}
+.top_heading h3 {
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+	color: #fff;
+}
+ul.portfolio-filter {
+	float: left;
+	margin-top: 0px;
+	width: 100%;
+}
+ul.portfolio-filter li {
+	padding: 0px 5px;
+}
+.portfolio-item {
+	padding: 5px 10px;
+}
+.recent_job {
+	padding: 5px 0px;
+	text-align: center;
+}
+.recent_job_left {
+	float: none;
+	margin: 0px auto;
+}
+.recent_job_right {
+	width: 100%;
+	padding-left: 0px;
+}
+.recent_job_category {
+	width: 100%;
+	padding-bottom: 5px;
+}
+.recent_job_right h3 {
+	font-size: 15px !important;
+}
+.recent_job_category {
+	width: 100%;
+}
+.slider_left {
+	float: none;
+	width: 130px;
+	margin: 0px auto;
+}
+.slider_right {
+	width: 100%;
+	text-align: center;
+}
+.footer_menu {
+	float: left;
+	width: 100%;
+}
+.footer_menu ul {
+	float: left;
+}
+.footer_heading {
+	float: left;
+	width: 100%;
+	padding-top: 10px;
+}
+.footer_heading h5 {
+	padding-bottom: 10px;
+}
+/**search page**/
+
+.company_img {
+	width: 100%;
+	text-align: center;
+}
+.job_title {
+	width: 100%;
+	margin-top: 10px;
+}
+.job_detail {
+	width: 100%;
+	padding: 2px;
+}
+.job_detail i {
+	padding-right: 5px;
+}
+.dl-horizontal {
+	float: left;
+	width: 100%;
+}
+.dl-horizontal dt {
+	float: left;
+	width: 100%;
+}
+.dl-horizontal dd {
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+ul.job_detail_ul li {
+	padding: 2px 0px;
+	width: 100%;
+}
+ul.job_detail_ul li:after {
+	display: none;
+}
+.search_result_content p {
+	padding-left: 0px;
+}
+.search_result_content {
+	padding: 10px 0px;
+}
+.job_title h3 {
+	text-align: center;
+}
+/**search_single**/
+
+.small_img {
+	width: 50%;
+}
+/**post_jobs page**/
+
+.wizard > .steps > ul > li.current:after, .wizard > .steps .number:after, .wizard > .steps > ul > li a p, .wizard > .actions > ul > li a p {
+	display: none !important;
+}
+.wizard > .steps > ul > li a h2, .wizard > .actions > ul > li a h2 {
+	width: 80% !important;
+	font-size: 20px !important;
+	min-height: 30px !important;
+}
+.wizard ul, .tabcontrol ul, .wizard > .content {
+	width: 90% !important;
+}
+.wizard > .steps > ul > li {
+	width: 100% !important;
+	padding: 10px 0px 0px !important;
+}
+.wizard > .steps .number {
+	width: 80px !important;
+	height: 80px !important;
+	line-height: 80px !important;
+	text-shadow: rgb(31, 45, 57) 1px 1px, rgb(31, 45, 57) 2px 2px, rgb(31, 45, 57) 3px 3px, rgb(31, 45, 57) 4px 4px, rgb(31, 45, 57) 5px 5px, rgb(31, 45, 57) 6px 6px, rgb(31, 45, 57) 7px 7px, rgb(31, 45, 57) 8px 8px, rgb(31, 45, 57) 9px 9px, rgb(31, 45, 58) 10px 10px, rgb(31, 45, 58) 11px 11px, rgb(31, 46, 58) 12px 12px, rgb(31, 46, 58) 13px 13px, rgb(32, 46, 59) 14px 14px, rgb(32, 46, 59) 15px 15px !important;
+}
+.wizard > .steps .number:before {
+	line-height: 80px !important;
+	font-size: 25px !important;
+}
+.wizard > .steps .done a:hover .number {
+	text-shadow: rgb(15, 153, 156) 1px 1px, rgb(15, 153, 156) 2px 2px, rgb(15, 153, 156) 3px 3px, rgb(15, 153, 156) 4px 4px, rgb(15, 153, 156) 5px 5px, rgb(15, 153, 156) 6px 6px, rgb(15, 153, 156) 7px 7px, rgb(15, 154, 157) 8px 8px, rgb(15, 154, 157) 9px 9px, rgb(15, 155, 158) 10px 10px, rgb(15, 156, 159) 11px 11px, rgb(15, 156, 159) 12px 12px, rgb(15, 157, 160) 13px 13px, rgb(15, 158, 161) 14px 14px, rgb(15, 158, 161) 15px 15px !important;
+}
+.wizard > .steps .current a .number, .wizard > .steps .current a:hover .number, .wizard > .steps .current a:active .number {
+	text-shadow: rgb(15, 153, 156) 1px 1px, rgb(15, 153, 156) 2px 2px, rgb(15, 153, 156) 3px 3px, rgb(15, 153, 156) 4px 4px, rgb(15, 153, 156) 5px 5px, rgb(15, 153, 156) 6px 6px, rgb(15, 153, 156) 7px 7px, rgb(15, 154, 157) 8px 8px, rgb(15, 154, 157) 9px 9px, rgb(15, 155, 158) 10px 10px, rgb(15, 156, 159) 11px 11px, rgb(15, 156, 159) 12px 12px, rgb(15, 157, 160) 13px 13px, rgb(15, 158, 161) 14px 14px, rgb(15, 158, 161) 15px 15px !important;
+}
+.add-photo-btn {
+	width: 40% !important;
+}
+.wizard > .actions > ul {
+	padding: 0px 1% !important;
+}
+.wizard > .actions > ul > li {
+	margin: 0 0.2em !important;
+}
+/**payment page**/
+
+.pricing_div {
+	margin: 10px 0px;
+}
+.login_Div{ width:100%; }
+.login_D{ height:750px; }
+.modal-content.my-popup {
+    float: left;
+    margin: 30px;
+    width: 79%;
+}
+}
+ @media (min-width: 400px) and (max-width: 479px) {
+.slide {
+	width: 176px !important;
+	margin-right: 25px !important;
+}
+.login_Div{ width:100%; }
+.login_D{ height:750px; }
+.modal-content.my-popup {
+    float: left;
+    margin: 30px;
+    width: 79%;
+}
+}
+ @media (max-width: 399px) {
+.slide {
+	margin-right: 22px !important;
+	width: 115px !important;
+}
+.slide img {
+	margin: 0px;
+}
+.footer_input {
+	width: 82%;
+}
+.recent_tweet ul li a {
+	width: 87%;
+}
+.login_Div{ width:100%; } .login_D{ height:750px; }
+.modal-content.my-popup {
+    float: left;
+    margin: 30px;
+    width: 79%;
+}
+}
+
+ @media ( max-width: 320px) {
+.custom_select {
+margin:10px 0px;
+}
+ input[type="text"], input[type="password"], select, input[type="email"] {
+margin-bottom:10px;
+}
+.login_Div{ width:100%; }
+ .sidebar-offcanvas{ width:100%; }
+  .ctbg {
+    width: 100%;
+}
+.clear-all {
+    border-top:1px solid #ccc;
+    width: 100%;
+}
+.login_D{ height:750px; }
+.modal-content.my-popup {
+    float: left;
+    margin: 30px;
+    width: 79%;
+}
+}
+
+/*----------responsive css end---------*/
