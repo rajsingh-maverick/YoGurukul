@@ -11,7 +11,7 @@ namespace YoGurukul.Controllers
         // GET: Common
         public ActionResult Index()
         {
-            var x = "padmalochan123";
+            var x = "padmalochan";
             return View();
         }
     }
