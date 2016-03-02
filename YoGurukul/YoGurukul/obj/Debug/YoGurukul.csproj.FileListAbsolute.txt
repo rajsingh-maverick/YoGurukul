@@ -194,3 +194,9 @@ E:\Projects\YoGurukul\YoGurukul\YoGurukul\bin\AutoMapper.xml
 E:\Projects\YoGurukul\YoGurukul\YoGurukul\obj\Debug\YoGurukul.csprojResolveAssemblyReference.cache
 E:\Projects\YoGurukul\YoGurukul\YoGurukul\obj\Debug\YoGurukul.dll
 E:\Projects\YoGurukul\YoGurukul\YoGurukul\obj\Debug\YoGurukul.pdb
+E:\Projects\YoGurukul\YoGurukul\YoGurukul\bin\System.Net.Http.Formatting.dll
+E:\Projects\YoGurukul\YoGurukul\YoGurukul\bin\System.Web.Http.dll
+E:\Projects\YoGurukul\YoGurukul\YoGurukul\bin\System.Web.Http.WebHost.dll
+E:\Projects\YoGurukul\YoGurukul\YoGurukul\bin\System.Net.Http.Formatting.xml
+E:\Projects\YoGurukul\YoGurukul\YoGurukul\bin\System.Web.Http.xml
+E:\Projects\YoGurukul\YoGurukul\YoGurukul\bin\System.Web.Http.WebHost.xml

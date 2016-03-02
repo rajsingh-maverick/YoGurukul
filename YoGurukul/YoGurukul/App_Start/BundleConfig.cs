@@ -26,6 +26,17 @@ namespace YoGurukul
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                 "~/Scripts/angular.min.js",
+                 "~/Scripts/angular-ui-router.js",
+                 "~/Scripts/angular-ui/ui-bootstrap.js",
+                 "~/Scripts/angular-ui/ui-bootstrap-tpls.js",
+                 "~/app/shared/services/web-services.js",
+                 "~/app/app.js",
+                 "~/app/module/home/homeController.js",
+                 "~/app/module/home/homeService.js"
+                ));
         }
     }
 }

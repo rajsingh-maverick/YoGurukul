@@ -117,3 +117,7 @@ E:\Projects\YoGurukul\YoGurukul\YoGurukul.Tests\bin\Debug\Autofac.Integration.Mv
 E:\Projects\YoGurukul\YoGurukul\YoGurukul.Tests\obj\Debug\YoGurukul.Tests.csprojResolveAssemblyReference.cache
 E:\Projects\YoGurukul\YoGurukul\YoGurukul.Tests\obj\Debug\YoGurukul.Tests.dll
 E:\Projects\YoGurukul\YoGurukul\YoGurukul.Tests\obj\Debug\YoGurukul.Tests.pdb
+E:\Projects\YoGurukul\YoGurukul\YoGurukul.Tests\bin\Debug\System.Web.Http.dll
+E:\Projects\YoGurukul\YoGurukul\YoGurukul.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\Projects\YoGurukul\YoGurukul\YoGurukul.Tests\bin\Debug\System.Web.Http.xml
+E:\Projects\YoGurukul\YoGurukul\YoGurukul.Tests\bin\Debug\System.Net.Http.Formatting.xml
