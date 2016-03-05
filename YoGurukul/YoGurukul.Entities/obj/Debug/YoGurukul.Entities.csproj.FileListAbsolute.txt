@@ -9,15 +9,3 @@ F:\Projects\YoGurukul\Code\NewCode\YoGurukul\YoGurukul.Entities\obj\Debug\YoGuru
 F:\Projects\YoGurukul\Code\NewCode\YoGurukul\YoGurukul.Entities\obj\Debug\YoGurukul.Entities.pdb
 F:\Projects\YoGurukul\Code\NewCode\YoGurukul\YoGurukul.Entities\bin\Debug\AutoMapper.dll
 F:\Projects\YoGurukul\Code\NewCode\YoGurukul\YoGurukul.Entities\bin\Debug\AutoMapper.xml
-E:\Projects\YoGurukul\YoGurukul\YoGurukul.Entities\bin\Debug\YoGurukul.Entities.dll.config
-E:\Projects\YoGurukul\YoGurukul\YoGurukul.Entities\bin\Debug\YoGurukul.Entities.dll
-E:\Projects\YoGurukul\YoGurukul\YoGurukul.Entities\bin\Debug\YoGurukul.Entities.pdb
-E:\Projects\YoGurukul\YoGurukul\YoGurukul.Entities\bin\Debug\AutoMapper.dll
-E:\Projects\YoGurukul\YoGurukul\YoGurukul.Entities\bin\Debug\EntityFramework.dll
-E:\Projects\YoGurukul\YoGurukul\YoGurukul.Entities\bin\Debug\EntityFramework.SqlServer.dll
-E:\Projects\YoGurukul\YoGurukul\YoGurukul.Entities\bin\Debug\AutoMapper.xml
-E:\Projects\YoGurukul\YoGurukul\YoGurukul.Entities\bin\Debug\EntityFramework.xml
-E:\Projects\YoGurukul\YoGurukul\YoGurukul.Entities\bin\Debug\EntityFramework.SqlServer.xml
-E:\Projects\YoGurukul\YoGurukul\YoGurukul.Entities\obj\Debug\YoGurukul.Entities.csprojResolveAssemblyReference.cache
-E:\Projects\YoGurukul\YoGurukul\YoGurukul.Entities\obj\Debug\YoGurukul.Entities.dll
-E:\Projects\YoGurukul\YoGurukul\YoGurukul.Entities\obj\Debug\YoGurukul.Entities.pdb

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoGurukul.Tests", "YoGurukul.Tests\YoGurukul.Tests.csproj", "{61176A99-C237-4536-9E5F-E5C5F7D5B6A7}"
 EndProject
@@ -28,6 +28,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoGurukul", "YoGurukul\YoGurukul.csproj", "{78E2E405-BED4-4585-A278-78050D926E1A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{0F3F6B60-3ABA-4653-8ADA-9ABED73EEB51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoGurukul.Web", "YoGurukul.Web\YoGurukul.Web.csproj", "{15248915-072E-40C9-8B88-56C9EE4ADB88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{78E2E405-BED4-4585-A278-78050D926E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78E2E405-BED4-4585-A278-78050D926E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78E2E405-BED4-4585-A278-78050D926E1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15248915-072E-40C9-8B88-56C9EE4ADB88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15248915-072E-40C9-8B88-56C9EE4ADB88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15248915-072E-40C9-8B88-56C9EE4ADB88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15248915-072E-40C9-8B88-56C9EE4ADB88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,5 +81,6 @@ Global
 		{AAA7B719-30D9-46A0-A0DA-3F9CBB12CA45} = {C59AA8D1-7A45-4C77-B497-BE9760F94BF5}
 		{C57A3451-5399-475E-8685-FEBE8513817D} = {C59AA8D1-7A45-4C77-B497-BE9760F94BF5}
 		{78E2E405-BED4-4585-A278-78050D926E1A} = {381A286F-267F-4E9C-920F-EC36886471ED}
+		{15248915-072E-40C9-8B88-56C9EE4ADB88} = {381A286F-267F-4E9C-920F-EC36886471ED}
 	EndGlobalSection
 EndGlobal

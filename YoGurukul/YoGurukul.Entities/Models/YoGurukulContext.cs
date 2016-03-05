@@ -1,10 +1,17 @@
+using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using YoGurukul.Entities.Models.Mapping;
 
 namespace YoGurukul.Entities.Models
 {
-    public partial class YoGurukulContext : DbContext
+    public class ApplicationUser : IdentityUser
+    {
+        public string EmailId { get; set; }
+        public int Age { get; set; }
+    }
+
+    public partial class YoGurukulContext : DbContext//IdentityDbContext<ApplicationUser>
     {
         static YoGurukulContext()
         {
